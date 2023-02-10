@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 // IMPORT INTERN STYLE
 import Style from "./NavBar.module.css";
 
+// Yooooo
+
 const NavBar = () => {
   return (
     <div className={Style.navbar}>
