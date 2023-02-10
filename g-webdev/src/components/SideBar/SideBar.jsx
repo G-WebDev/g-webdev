@@ -8,12 +8,25 @@ import Style from "./SideBar.module.css";
 const SideBar = () => {
   return (
     <div className={Style.sidebar}>
-      <ul className={Style.sidebar_menu_list}>
-        <li className={Style.list_item}> <Link to="/web3">Web3</Link> </li>
-        <li className={Style.list_item}> <Link to="/skills">Skills</Link> </li>
-        <li className={Style.list_item}> <Link to="/projects">Projects</Link> </li>
-        <li className={Style.list_item}> <Link to="/contact">Contact</Link> </li>
+
+      <ul className={Style.sidebar__menu__list}>
+
+        <li className={Style.sidebar__list__item}>
+          <Link to="/diensten">Diensten</Link>
+          <div className={Style.item_line}></div>
+        </li>
+
+        <li className={Style.sidebar__list__item}>
+          <Link to="/projecten">Projecten</Link>
+          <div className={Style.item_line}></div>
+        </li>
+
+        <li className={Style.sidebar__list__item}>
+          <Link to="/contact">Contact</Link>
+          <div className={Style.item_line}></div>
+        </li>
       </ul>
+
     </div>
   )
 }

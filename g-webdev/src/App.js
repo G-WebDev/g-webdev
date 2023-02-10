@@ -6,9 +6,8 @@ import './App.css';
 import Header from "./components/Header/Header";
 
 import Home from './pages/Home/Home';
-import Web3 from "./pages/Web3/Web3";
 import Projects from './pages/Projects/Projects';
-import Skills from './pages/Skills/Skills';
+import Diensten from './pages/Diensten/Diensten';
 import Contact from "./pages/Contact/Contact";
 
 
@@ -20,9 +19,8 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="web3" element={<Web3 />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="diensten" element={<Diensten />} />
+        <Route path="projecten" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
