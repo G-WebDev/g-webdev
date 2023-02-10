@@ -1,23 +1,33 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import NavBar from './components/Navbar/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const Home = () => <h1>Home</h1>;
-const Services = () => <h1>Services</h1>;
-const Portfolio = () => <h1>Portfolio</h1>;
-const Contact = () => <h1>Contact</h1>;
+import './App.css';
 
-const App = () => {
+// IMPORT INTERN COMPONENTS
+import Header from "./components/Header/Header";
+
+import Home from './pages/Home/Home';
+import Web3 from "./pages/Web3/Web3";
+import Projects from './pages/Projects/Projects';
+import Skills from './pages/Skills/Skills';
+import Contact from "./pages/Contact/Contact";
+
+
+function App() {
+
+
   return (
-    <Router>
-      <NavBar />
-
-      <Route exact path="/" component={Home} />
-      <Route path="/services" component={Services} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/contact" component={Contact} />
-    </Router>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="web3" element={<Web3 />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
+

@@ -1,0 +1,17 @@
+.skills {   
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.skills_container {
+    margin: 0 auto;
+    width: var(--container-lg);
+}
+
+.intro_box {
+
+}
+
+.intro_title_box {
+}

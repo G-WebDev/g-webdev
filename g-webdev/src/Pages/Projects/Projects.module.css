@@ -1,0 +1,17 @@
+.projects {   
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.projects_container {
+    margin: 0 auto;
+    width: var(--container-lg);
+}
+
+.intro_box {
+
+}
+
+.intro_title_box {
+}
