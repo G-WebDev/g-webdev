@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT INTERN STYLE
-import Style from "./NavBar.module.css";
-
-// Yooooo
+import Style from "./Navbar.module.css";
 
 const NavBar = () => {
   return (

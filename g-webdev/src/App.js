@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
 // IMPORT INTERN COMPONENTS
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
@@ -28,4 +28,3 @@ function App() {
 }
 
 export default App;
-

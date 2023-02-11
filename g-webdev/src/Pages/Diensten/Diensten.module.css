@@ -1,17 +1,39 @@
-.skills {   
-    margin-top: 5rem;
+.diensten__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: var(--color-bg-light);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dienst {
+    width: 45%;
     text-align: center;
-    color: var(--color-text);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px var(--color-accent-3);
+    margin: 1.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.skills_container {
-    margin: 0 auto;
-    width: var(--container-lg);
+.dienst__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
 }
 
-.intro_box {
-
+.dienst__description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
 }
 
-.intro_title_box {
+.dienst:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 12px var(--color-accent-2);
 }

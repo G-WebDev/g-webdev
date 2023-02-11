@@ -20,7 +20,7 @@
 }
 
 .navbar__menu__list__item a:hover {
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .item__line {
@@ -32,5 +32,5 @@
 
 .navbar__menu__list__item:hover .item__line {
   margin: 0 5%;
-  box-shadow: 0 2px var(--color-text);
+  box-shadow: 0 2px var(--color-primary);
 }

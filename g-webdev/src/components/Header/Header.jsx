@@ -8,8 +8,8 @@ import Style from "./Header.module.css";
 import images from "../../Assets/Images";
 
 // IMPORT INTERN COMPONENTS
-import NavBar from "../Navbar/NavBar";
-import SideBar from "../SideBar/SideBar";
+import NavBar from "../navbar/Navbar";
+import SideBar from "../sidebar/SideBar";
 
 // IMPORT EXTERN COMPONENTS
 import { Spin as Hamburger } from "hamburger-react";

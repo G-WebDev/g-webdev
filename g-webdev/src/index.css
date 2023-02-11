@@ -14,14 +14,22 @@ body {
 }
 
 :root {
-  --color--bg-light: #e0e1dd;
-  --color-bg-dark: #282a3a;
+  /* LOGO COLOR   #c99383 */
+
+  --color-primary: #c99383;
 
   --color-text-light: #735f32;
   --color-text-dark: #1b263b;
 
-  /* LOGO COLOR */
-  --color-text: #c99383;
+  --color-bg-light: #e0e1dd;
+  --color-bg-light-2: #999999;
+
+  --color-bg-dark: #333333;
+
+  --color-accent-1: #e9d9c7;
+  --color-accent-2: #f2e9e9;
+  --color-accent-3: #7c3f3f;
+
 
   --container-xl: 58%;
   --container-lg: 68%;

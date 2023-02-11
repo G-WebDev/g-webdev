@@ -21,7 +21,7 @@
 }
 
 .sidebar__list__item a:hover {
-    color: var(--color-text);
+    color: var(--color-primary);
 }
 
 .item_line {
@@ -33,7 +33,7 @@
 
 .sidebar__list__item:hover .item_line {
     margin: 0 45%;
-    box-shadow: 0 2px var(--color-text);
+    box-shadow: 0 2px var(--color-primary);
 }
 
 @media screen and (max-width: 768px) {
