@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useEffect } from "react";
+import Typed from "typed.js";
 
 // IMPORT INTERN STYLE
 import Style from "./Home.module.css";
@@ -7,52 +7,53 @@ import Style from "./Home.module.css";
 // import images from "../../Assets/Images";
 
 const Home = () => {
+
+  const el = useRef(null);
+  // Create reference to store the Typed instance itself
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        'webdesign...'
+      ],
+      typeSpeed: 150
+    };
+
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed.current.destroy();
+    }
+  }, [])
+
   return (
     <div className={Style.home}>
-      <div className={Style.home_container}>
-        <div className={Style.intro_box}>
-          <div className={Style.intro__text}>
-            <div className={Style.intro__welcome__box}>
-              Welkom bij <h1 className={Style.title__name__gwebdev}>G.WebDev</h1>
-              <br />
-              <div className={Style.slogan}>Uw betrouwbare partner in webontwikkeling.</div>
-            </div>
+      <div className={Style.home__container}>
+        <div className={Style.home__intro__box}>
 
-            {/* <div className={Style.home__banner}> */}
-
-            <div className={Style.intro_box}>
-              <div className={Style.intro__text}>
-                Mijn naam is <h1 className={Style.title__name}>Gwen</h1>,
-                <br />
-                ik ben een professionele web developer met ervaring in het creëren van functionele en
-                mooie websites.
-                <br />
-                <br />
-                Of u nu een kleine start-up of een grote onderneming bent, ik ben hier om uw online
-                aanwezigheid naar een hoger niveau te tillen.
-                <br />
-                <br />
-                Van het ontwerpen van een nieuwe website tot het onderhouden van uw bestaande website, ik
-                ben gedreven om u te helpen uw online doelen te bereiken.
-                <br />
-                <br />
-                Ik breng uw ideeën tot leven door middel van innovatieve en gebruiksvriendelijke
-                webontwerpen.
-                <div className={Style.contact__me}>
-                  Neem{" "}
-                  <Link to="/contact" className={Style.contact__link}>
-                    contact
-                  </Link>{" "}
-                  op voor meer informatie of om te bespreken hoe ik uw bedrijf online kan helpen groeien
-                  in een digitaal tijdperk.
-                </div>
-              </div>
+          <div className={Style.home__intro__title__box}>
+            <div className={Style.home__intro__title}>
+              <span style={{ whiteSpace: 'pre' }} ref={el} />
             </div>
           </div>
+
+          <div className={Style.home__intro__text__box}>
+            <div className={Style.home__intro__text}>Een website nodig? Of zoek je naar een webdesigner in Gent?
+              Bij G.WebDev ontwerpen, bouwen, onderhouden en optimaliseren we websites voor alle branches.
+              G.WebDev maakt dé website, webshop of webapplicatie die jouw online activiteit naar een hoger niveau brengt.</div>
+          </div>
+
         </div>
       </div>
+
     </div>
   );
 };
+
+
 
 export default Home;

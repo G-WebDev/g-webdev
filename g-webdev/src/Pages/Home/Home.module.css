@@ -2,86 +2,38 @@
   margin-top: 4rem;
 }
 
-.home_container {
-  margin: 0 auto;
+.home__container {
   width: var(--container-xl);
-}
-
-.home_container_2 {
   margin: 0 auto;
-  width: var(--container-xl);
-  text-align: center;
 }
 
-.intro_box {
-  display: block;
+.home__intro__box {
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 
-.intro__text {
-  font-size: 1.2rem;
-  font-weight: 300;
-  text-align: center;
-}
-
-.slogan {
-  font-size: 0.8rem;
-  font-weight: 300;
-}
-
-.intro__welcome__box {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.title__name {
-  display: inline;
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--color-text);
-}
-
-.title__name__gwebdev {
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-text);
-  display: inline;
-}
-
-.contact__me {
-  margin: 3rem 0;
-}
-
-.contact__link {
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.home__banner {
-  margin: 2rem 0;
-
+.home__intro__title__box {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-image: url("../../Assets//Images/goldribbon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8;
-  z-index: 0;
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.banner__img {
-  opacity: 0.5;
+.home__intro__text__box {
+  width: var(--container-lg);
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: 1023px) {
-  .intro__text {
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-  }
+.home__intro__text {
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
 
-  .slogan {
-    font-size: 0.6rem;
-    font-weight: 300;
+
+@media screen and (max-width: 768px) {
+  .home__intro__title__box {
+    width: 100%;
+    font-size: 2.8rem;
   }
 }
