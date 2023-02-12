@@ -1,4 +1,4 @@
-import Logo from "./Logo.png";
+import Logo from "./Logo2.png";
 import LogoWeb3 from './LogoWeb3.png';
 import Web3 from './Web3.png';
 import Web3_banner from './Web3_banner.png';
@@ -7,6 +7,6 @@ import HomeBg from './homeBg.png';
 import BgImage from './bg_image.jpg';
 import LaptopFrame from './LaptopFrame.png';
 import LaptopFrame2 from './LaptopFrame2.png';
+import ContentImage from './contentImage.jpg';
 
-
-export default { Logo, LogoWeb3, Web3, Web3_banner, Intro_1, HomeBg, BgImage, LaptopFrame, LaptopFrame2 }
+export default { Logo, LogoWeb3, Web3, Web3_banner, Intro_1, HomeBg, BgImage, LaptopFrame, LaptopFrame2, ContentImage }
