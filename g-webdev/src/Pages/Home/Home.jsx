@@ -109,7 +109,7 @@ const Home = () => {
                   <div className={Style.content__text__line}></div>
                   <br />
                   Een aantrekkelijke website die zowel informatief als interactief is?
-                  Met ervaren en passioneel webdesign leveren wij bij Creamy voor elk bedrijf het beste en meest bevredigende eindresultaat.
+                  Met ervaren en passioneel webdesign leveren wij bij G.WebDev voor elk bedrijf het beste en meest bevredigende eindresultaat.
                   Straal expertise en persoonlijkheid uit met een krachtig webdesign: zo win je gegarandeerd klanten.
                   <div className={Style.content__text__line}></div>
                 </div>
@@ -127,7 +127,7 @@ const Home = () => {
                   <br />
                   Beheer je klanten en producten met een eenvoudig en doelgericht systeem.
                   Zo bespaar je tijd én geld: een snelle manier om je leven een pak aangenamer en overzichtelijker te maken.
-                  Daar zet Creamy zich maar al te graag voor in!
+                  Daar zet G.WebDev zich maar al te graag voor in!
                   <div className={Style.content__text__line}></div>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const Home = () => {
                   Online verkopen is nu eenmaal de 'hipe'. Bedrijven kiezen hiervoor om meer klanten aan te spreken.
                   Start vandaag met uw online shop en groei tot een succesvolle en globale winkel.
                   Expand your limits before it's late! Samen bouwen we uw online winkel met een moderne webdesign.
-                  Hierbij kunt u rekenen op Creamy!
+                  Hierbij kunt u rekenen op G.WebDev!
                   <div className={Style.content__text__line}></div>
                   <br />
                 </div>
