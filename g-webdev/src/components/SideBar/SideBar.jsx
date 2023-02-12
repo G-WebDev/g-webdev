@@ -12,6 +12,16 @@ const SideBar = () => {
       <ul className={Style.sidebar__menu__list}>
 
         <li className={Style.sidebar__list__item}>
+          <Link to="/">Home</Link>
+          <div className={Style.item_line}></div>
+        </li>
+
+        <li className={Style.sidebar__list__item}>
+          <Link to="/about">About Me</Link>
+          <div className={Style.item_line}></div>
+        </li>
+
+        <li className={Style.sidebar__list__item}>
           <Link to="/diensten">Diensten</Link>
           <div className={Style.item_line}></div>
         </li>

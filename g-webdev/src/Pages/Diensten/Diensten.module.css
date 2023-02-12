@@ -1,4 +1,6 @@
 .diensten__container {
+    width: var(--container-lg);
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,15 +8,15 @@
     padding: 3rem 0;
     background-color: var(--color-bg-light);
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .dienst {
-    width: 45%;
+    width: 30%;
     text-align: center;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 8px var(--color-accent-3);
+    box-shadow: 2px 2px 12px var(--color-shadow-dark);
     margin: 1.5rem;
     transition: all 0.3s ease-in-out;
 }
@@ -35,5 +37,6 @@
 
 .dienst:hover {
     transform: translateY(-5px);
-    box-shadow: 2px 2px 12px var(--color-accent-2);
+
+    box-shadow: 2px 2px 8px var(--color-accent-3);
 }

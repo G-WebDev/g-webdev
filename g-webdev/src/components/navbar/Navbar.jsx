@@ -12,6 +12,16 @@ const NavBar = () => {
         <ul className={Style.navbar__menu__list}>
 
           <li className={Style.navbar__menu__list__item}>
+            <Link to="/">Home</Link>
+            <div className={Style.item__line}></div>
+          </li>
+
+          <li className={Style.navbar__menu__list__item}>
+            <Link to="/about">About Me</Link>
+            <div className={Style.item__line}></div>
+          </li>
+
+          <li className={Style.navbar__menu__list__item}>
             <Link to="/diensten">Diensten</Link>
             <div className={Style.item__line}></div>
           </li>

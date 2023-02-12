@@ -19,30 +19,33 @@ const Header = () => {
 
   return (
     <div className={Style.header}>
-      <div className={Style.header_wrapper}>
-        <div className={Style.header_box_left}>
-          <div className={Style.logo_box}>
+      <div className={Style.header__container}>
+        <div className={Style.header__box__left}>
+          <div className={Style.header__logo__box}>
             <Link to="/">
-              <img src={images.Logo} alt="logo" className={Style.logo} />
+              <img src={images.Logo} alt="logo" className={Style.header__logo} />
             </Link>
           </div>
         </div>
 
-        <div className={Style.header_box_right}>
-          <div className={Style.header_navbar}>
+        <div className={Style.header__box__right}>
+          <div className={Style.header__navbar}>
             <NavBar />
           </div>
+
+          <div className={Style.hamburger}>
+            <Hamburger duration={1} toggled={openSideBar} toggle={setOpenSideBar} />
+          </div>
+          {openSideBar && (
+            <div className={Style.sidebar} isOpen={openSideBar}>
+              <SideBar />
+            </div>
+          )}
         </div>
+
       </div>
 
-      <div className={Style.hamburger}>
-        <Hamburger duration={1} toggled={openSideBar} toggle={setOpenSideBar} />
-      </div>
-      {openSideBar && (
-        <div className={Style.sidebar} isOpen={openSideBar}>
-          <SideBar />
-        </div>
-      )}
+
     </div>
   );
 };
