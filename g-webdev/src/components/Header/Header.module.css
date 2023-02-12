@@ -1,5 +1,5 @@
 .header {
-  width: var(--container-xl);
+  width: var(--container-md);
   margin: 0 auto;
 }
 
@@ -34,6 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .header {
+
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;

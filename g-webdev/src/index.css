@@ -27,7 +27,9 @@ body {
   --color-bg-light: #ffffff;
   --color-bg-light-2: #999999;
 
-  --color-bg-dark: #333333;
+  --color-bg-dark: #696969;
+  --color-bg-dark-2: #808080;
+  --color-bg-dark-3: #A9A9A9;
 
   --color-accent-1: #e9d9c7;
   --color-accent-2: #f2e9e9;
@@ -35,6 +37,6 @@ body {
 
   --container-xl: 58%;
   --container-lg: 68%;
-  --container-md: 84%;
+  --container-md: 82%;
   --container-sm: 92%;
 }
