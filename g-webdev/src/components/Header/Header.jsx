@@ -22,7 +22,7 @@ const Header = () => {
       <div className={Style.header__container}>
         <div className={Style.header__box__left}>
           <div className={Style.header__logo__box}>
-            <Link to="/">
+            <Link to="/" target="blank">
               <img src={images.Logo} alt="logo" className={Style.header__logo} />
             </Link>
           </div>

@@ -32,11 +32,11 @@ const Footer = () => {
                 <div className={Style.footer__paginas__box}>
                     <p>PAGINA'S</p>
                     <ul className={Style.footer__paginas__list}>
-                        <li className={Style.footer__paginas__list__item}><Link to="/">Home</Link></li>
-                        <li className={Style.footer__paginas__list__item}><Link to="/about">About Me</Link></li>
-                        <li className={Style.footer__paginas__list__item}><Link to="/diensten">Diensten</Link></li>
-                        <li className={Style.footer__paginas__list__item}><Link to="/projecten">Projecten</Link></li>
-                        <li className={Style.footer__paginas__list__item}> <Link to="/contact">Contact</Link></li>
+                        <li className={Style.footer__paginas__list__item}><Link to="/" target="blank">Home</Link></li>
+                        <li className={Style.footer__paginas__list__item}><Link to="/about" target="blank">About Me</Link></li>
+                        <li className={Style.footer__paginas__list__item}><Link to="/diensten" target="blank">Diensten</Link></li>
+                        <li className={Style.footer__paginas__list__item}><Link to="/projecten" target="blank">Projecten</Link></li>
+                        <li className={Style.footer__paginas__list__item}> <Link to="/contact" target="blank">Contact</Link></li>
                     </ul>
                 </div>
 
@@ -50,9 +50,9 @@ const Footer = () => {
 
                 <div className={Style.footer__disclaimer__list__box}>
                     <ul className={Style.footer__disclaimer__list}>
-                        <li className={Style.footer__disclaimer__list__item}><a href="/#">DISCLAIMER</a></li>
-                        <li className={Style.footer__disclaimer__list__item}><a href="/#">PRIVACY</a></li>
-                        <li className={Style.footer__disclaimer__list__item}><a href="/#">SITEMAP</a></li>
+                        <li className={Style.footer__disclaimer__list__item}><a href="/#" target="blank">DISCLAIMER</a></li>
+                        <li className={Style.footer__disclaimer__list__item}><a href="/#" target="blank">PRIVACY</a></li>
+                        <li className={Style.footer__disclaimer__list__item}><a href="/#" target="blank">SITEMAP</a></li>
                     </ul>
                 </div>
 

@@ -12,27 +12,27 @@ const SideBar = () => {
       <ul className={Style.sidebar__menu__list}>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/">Home</Link>
+          <Link to="/" target="blank">Home</Link>
           <div className={Style.item_line}></div>
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/about">About Me</Link>
+          <Link to="/about" target="blank">About Me</Link>
           <div className={Style.item_line}></div>
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/diensten">Diensten</Link>
+          <Link to="/diensten" target="blank">Diensten</Link>
           <div className={Style.item_line}></div>
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/projecten">Projecten</Link>
+          <Link to="/projecten" target="blank">Projecten</Link>
           <div className={Style.item_line}></div>
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" target="blank">Contact</Link>
           <div className={Style.item_line}></div>
         </li>
       </ul>
