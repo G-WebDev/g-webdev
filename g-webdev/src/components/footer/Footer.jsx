@@ -45,7 +45,7 @@ const Footer = () => {
             <div className={Style.footer__container}>
 
                 <div className={Style.footer__disclaimer__box}>
-                    © 2023 G.WebDev • Uw website laten maken aan een passionele webdesign bureau in Gent voor een krachtige website.
+                    © 2023 G.WebDev • Uw website laten maken door een passionele web developer in Gent om uw online aanwezigheid naar een hoger niveau te tillen.
                 </div>
 
                 <div className={Style.footer__disclaimer__list__box}>

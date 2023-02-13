@@ -16,6 +16,7 @@
 
 .footer__gegevens__box {
     padding: 2rem;
+    margin-left: 3rem;
 }
 
 .footer__gegevens__list {
@@ -35,7 +36,7 @@
 
 .footer__paginas__box {
     padding: 2rem;
-    margin-left: 2rem;
+    margin-left: 10rem;
 }
 
 .footer__paginas__list {
