@@ -56,6 +56,7 @@ const Home = () => {
 
         </div>
       </div>
+
       <div className={Style.home__content__box}>
 
         <div className={Style.home__content__blocks}>
@@ -174,6 +175,7 @@ const Home = () => {
         </div>
 
       </div>
+
 
     </div >
   );

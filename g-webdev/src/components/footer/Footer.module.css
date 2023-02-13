@@ -1,0 +1,95 @@
+.footer {}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: var(--container-xl);
+    margin: 0 auto;
+    padding: 1rem;
+
+    border-top: .1px solid rgba(0, 0, 0, 0.100);
+}
+
+.footer__logo__box {
+    padding: 2rem;
+}
+
+.footer__gegevens__box {
+    padding: 2rem;
+}
+
+.footer__gegevens__list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer__gegevens__list__item {
+    font-size: 14px;
+    margin-top: .5rem;
+}
+
+.footer__gegevens__list__item a {
+    text-decoration: none;
+    color: var(--color-accent-3);
+}
+
+.footer__paginas__box {
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.footer__paginas__list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.footer__paginas__list__item {
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.footer__paginas__list__item a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
+.footer__paginas__list__item a:hover {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.footer__disclaimer__box {
+    padding: 2rem;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.footer__disclaimer__list__box {
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.footer__disclaimer__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__disclaimer__list__item a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.footer__deel__box {
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+.footer__deel__text {
+    font-size: 12px;
+}
+
+.footer__deel__text a {
+    margin-left: 1.5rem;
+}
