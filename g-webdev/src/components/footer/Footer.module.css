@@ -27,6 +27,11 @@
     margin-top: .5rem;
 }
 
+.footer__paginas__list__item_socials a {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
 .footer__gegevens__list__item a {
     text-decoration: none;
     color: var(--color-accent-3);

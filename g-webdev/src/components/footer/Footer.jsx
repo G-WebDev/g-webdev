@@ -29,7 +29,17 @@ const Footer = () => {
 
                         <li className={Style.footer__gegevens__list__item}>BTW BE123.456.789</li>
                         <br />
-                        <li className={Style.footer__gegevens__list__item}>FBlogo / TwitLogo</li>
+                        <li className={Style.footer__gegevens__list__item}>
+                            <div className={Style.footer__paginas__list__item_socials}>
+                                <a href="https://www.facebook.com/profile.php?id=100089783126960" target="blank">
+                                    <FontAwesomeIcon icon={faFacebookF} />
+                                </a>
+                                <a href="/" target="blank">
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </a>
+                            </div>
+
+                        </li>
                     </ul>
                 </div>
 
