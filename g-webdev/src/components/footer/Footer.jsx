@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 // IMPORT INTERN STYLE
 import Style from "./Footer.module.css";
 
@@ -12,7 +16,7 @@ const Footer = () => {
         <div className={Style.footer}>
             <div className={Style.footer__container}>
                 <div className={Style.footer__logo__box}>
-                    <img src={images.Logo} alt="logo" width={200} />
+                    <Link to="/" target="blank"> <img src={images.Logo} alt="logo" width={200} /> </Link>
                 </div>
 
                 <div className={Style.footer__gegevens__box}>
@@ -57,7 +61,16 @@ const Footer = () => {
                 </div>
 
                 <div className={Style.footer__deel__box}>
-                    <div className={Style.footer__deel__text}>DEEL: <a>FB</a> <a>Twit</a></div>
+                    <div className={Style.footer__deel__text}>
+                        DEEL:
+                        <a href="/" target="blank">
+                            <FontAwesomeIcon icon={faFacebookF} />
+                        </a>
+
+                        <a href="/" target="blank">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
+                    </div>
 
                 </div>
 
