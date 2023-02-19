@@ -20,31 +20,32 @@ const Header = () => {
   return (
     <div className={Style.header}>
       <div className={Style.header__container}>
-        <div className={Style.header__box__left}>
-          <div className={Style.header__logo__box}>
-            <Link to="/" target="blank">
-              <img src={images.Logo} alt="logo" className={Style.header__logo} />
-            </Link>
-          </div>
+
+        <div className={Style.header__logo__box}>
+          <Link to="/" target="blank">
+            <img src={images.Logo} alt="logo" className={Style.header__logo} />
+          </Link>
         </div>
 
-        <div className={Style.header__box__right}>
+        <div className={Style.header__navigation__box}>
           <div className={Style.header__navbar}>
             <NavBar />
           </div>
 
+
           <div className={Style.hamburger}>
-            <Hamburger duration={1} toggled={openSideBar} toggle={setOpenSideBar} />
+            <Hamburger duration={1} toggled={openSideBar} size={25} toggle={setOpenSideBar} />
           </div>
-          {openSideBar && (
-            <div className={Style.sidebar} isOpen={openSideBar}>
-              <SideBar />
-            </div>
-          )}
+
         </div>
 
       </div>
 
+      {openSideBar && (
+        <div className={Style.sidebar} isOpen={openSideBar}>
+          <SideBar />
+        </div>
+      )}
 
     </div>
   );

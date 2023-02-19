@@ -44,7 +44,7 @@ const Home = () => {
 
           <div className={Style.home__intro__text__box}>
             <div className={Style.home__intro__text}>Een website nodig? Of zoek je naar een web developer in Gent? <br />
-              <strong>G.WebDev</strong> ontwerpt, bouwt, onderhoud en optimaliseerd dé website, webshop of webapplicatie die jouw<br />
+              <strong>G.WebDev</strong> ontwerpt, bouwt, onderhoud en optimaliseerd dé website, webshop of webapplicatie die jouw
               online activiteit naar een hoger niveau brengt.<br />
 
             </div>
@@ -53,6 +53,7 @@ const Home = () => {
           <div className={Style.home__intro__box__image}>
             <img src={images.HomeBg} alt="laptop" className={Style.home__laptop} />
           </div>
+
 
         </div>
       </div>
@@ -72,21 +73,21 @@ const Home = () => {
 
           <div className={Style.home__content__block2}>
             <div className={Style.home__content__block__title}>
-              OVER G.WebDev.
+              WEB DEVELOPER IN GENT.
             </div>
             <div className={Style.home__content__block__text}>
-              Zoek je een web developer in Gent? <strong>G.WebDev</strong> is een web developer met passie voor het web.
-              Met jaren ervaring en de goede service bouwen we voor jou als ambitieus bedrijf een krachtige website!
+              Op zoek naar een ervaren web developer in Gent? <strong>G.WebDev</strong> is hier om jou te helpen!
+              Met uitgebreide kennis en vaardigheden in web development, bouwt <strong>G.WebDev</strong> een krachtige website voor jouw bedrijf.
             </div>
           </div>
 
           <div className={Style.home__content__block3}>
             <div className={Style.home__content__block__title}>
-              WEB DEVELOPER IN GENT.
+              OVER G.WebDev.
             </div>
             <div className={Style.home__content__block__text}>
-              Begin vandaag nog met het digitaliseren van je onderneming. Je online aanwezigheid is onmisbaar.
-              Neem daarom plaats op het internet en bereik meer klanten, want zij zoeken online.
+              Op zoek naar een ervaren web developer in Gent? <strong>G.WebDev</strong> is hier om jou te helpen!
+              Met uitgebreide kennis en vaardigheden in web development, bouwt <strong>G.WebDev</strong> een krachtige website voor jouw bedrijf.
             </div>
           </div>
 
@@ -109,9 +110,9 @@ const Home = () => {
                 <div className={Style.home__content__main__box__text}>
                   <div className={Style.content__text__line}></div>
                   <br />
-                  Een aantrekkelijke website die zowel informatief als interactief is?
-                  Met ervaren en passioneel webdesign leveren wij bij <strong>G.WebDev</strong> voor elk bedrijf het beste en meest bevredigende eindresultaat.
-                  Straal expertise en persoonlijkheid uit met een krachtig webdesign: zo win je gegarandeerd klanten.
+                  Een aantrekkelijke website is de sleutel tot succes voor elk bedrijf.
+                  <strong>G.WebDev</strong> weet als geen ander hoe een website te ontwerpen die klanten aantrekt én behoudt.
+                  Met ervaring en passie voor webdesign levert <strong>G.WebDev</strong> een resultaat dat niet alleen mooi is om naar te kijken, maar ook de juiste informatie overbrengt en interactie creëert met je doelgroep.
                   <div className={Style.content__text__line}></div>
                 </div>
               </div>
@@ -137,17 +138,16 @@ const Home = () => {
             <div className={Style.home__content__main__box__col2}>
               <div className={Style.home__content__main__box3}>
                 <div className={Style.home__content__main__box__title}>
-                  WEBSHOP
+                  E-COMMERCE
                   <div className={Style.content__line}></div>
                 </div>
 
                 <div className={Style.home__content__main__box__text}>
                   <div className={Style.content__text__line}></div>
                   <br />
-                  Online verkopen is nu eenmaal de 'hipe'. Bedrijven kiezen hiervoor om meer klanten aan te spreken.
-                  Start vandaag met uw online shop en groei tot een succesvolle en globale winkel.
-                  Expand your limits before it's late! Samen bouwen we uw online winkel met een moderne webdesign.
-                  Hierbij kunt u rekenen op <strong>G.WebDev</strong>!
+                  De toekomst van retail is digitaal, en als bedrijf wil je daar natuurlijk niet bij achterblijven.
+                  <strong>G.WebDev</strong> helpt je graag om jouw online shop op te zetten, zodat je meer klanten kunt bereiken en succesvol kunt groeien.
+                  Met moderne webdesign en onze expertise op het gebied van e-commerce, ben je verzekerd van een webshop die helemaal past bij jouw bedrijf.
                   <div className={Style.content__text__line}></div>
                   <br />
                 </div>
@@ -176,8 +176,8 @@ const Home = () => {
 
       </div>
 
+    </div>
 
-    </div >
   );
 };
 

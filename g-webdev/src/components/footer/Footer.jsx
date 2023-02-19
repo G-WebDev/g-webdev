@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={Style.footer}>
             <div className={Style.footer__container}>
                 <div className={Style.footer__logo__box}>
-                    <Link to="/" target="blank"> <img src={images.Logo} alt="logo" width={200} /> </Link>
+                    <Link to="/" target="blank"> <img src={images.Logo} alt="logo" className={Style.footer__logo} /> </Link>
                 </div>
 
                 <div className={Style.footer__gegevens__box}>
