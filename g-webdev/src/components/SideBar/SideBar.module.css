@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .sidebar {
         margin-top: 2rem;
     }
@@ -34,6 +34,7 @@
 
     .sidebar__list__item a {
         text-decoration: none;
+        color: black;
     }
 
     /* .sidebar__list__item a:hover {
@@ -47,10 +48,7 @@
         transition: all 0.5s ease;
     }
 
-    /* .sidebar__list__item:hover .item_line {
-        margin: 0 42%;
-        box-shadow: 0 2px var(--color-primary);
-    } */
+
 }
 
 @media screen and (max-width: 425px) {
