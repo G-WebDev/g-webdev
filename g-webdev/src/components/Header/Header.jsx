@@ -20,6 +20,7 @@ const Header = () => {
   return (
     <div className={Style.header}>
       <div className={Style.header__container}>
+
         <div className={Style.header__box__left}>
           <div className={Style.header__logo__box}>
             <Link to="/" target="blank">
@@ -34,17 +35,21 @@ const Header = () => {
           </div>
 
           <div className={Style.hamburger}>
-            <Hamburger duration={1} toggled={openSideBar} toggle={setOpenSideBar} />
-          </div>
-          {openSideBar && (
-            <div className={Style.sidebar} isOpen={openSideBar}>
-              <SideBar />
+            <div className={Style.hamburger__box}>
+              <Hamburger duration={1} toggled={openSideBar} toggle={setOpenSideBar} />
             </div>
-          )}
+          </div>
         </div>
 
       </div>
 
+      <div className={Style.header__sidebar}>
+        {openSideBar && (
+          <div className={Style.sidebar} isOpen={openSideBar}>
+            <SideBar />
+          </div>
+        )}
+      </div>
 
     </div>
   );
