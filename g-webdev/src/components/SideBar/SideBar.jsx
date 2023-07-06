@@ -37,7 +37,6 @@ const SideBar = () => {
             <div className={Style.item_line}></div>
           </li>
         </ul>
-
       </div>
     </div>
   )
