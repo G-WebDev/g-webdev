@@ -1,6 +1,10 @@
 .navbar {
+<<<<<<< HEAD
   width: 100%;
 
+=======
+  padding: .5rem;
+>>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
 }
 
 .navbar__menu {
@@ -11,7 +15,7 @@
 
 .navbar__menu__list {
   display: flex;
-  gap: 3em;
+  gap: 3rem;
   list-style: none;
 
 }
@@ -19,6 +23,7 @@
 .navbar__menu__list__item a {
   text-decoration: none;
   font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar__menu__list__item a:hover {
@@ -37,8 +42,18 @@
   box-shadow: 0 2px var(--color-primary);
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) and (max-width: 1250px) {
   .navbar__menu__list {
     gap: 2em;
+=======
+@media screen and (max-width: 1024px) {
+  .navbar__menu__list__item a {
+    font-size: .7rem;
+  }
+
+  .navbar__menu__list {
+    gap: 1.8rem;
+>>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
   }
 }

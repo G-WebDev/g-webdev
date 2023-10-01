@@ -43,7 +43,7 @@ const Home = () => {
 
           <div className={Style.home__intro__text__box}>
             <div className={Style.home__intro__text}>Een website nodig? Of zoek je naar een web developer in Gent? <br />
-              <strong>G.WebDev</strong> ontwerpt, bouwt, onderhoud en optimaliseerd dé website, webshop of webapplicatie die jouw<br />
+              <strong>G.WebDev</strong> ontwerpt, bouwt, onderhoud en optimaliseerd dé website, webshop of webapplicatie die jouw
               online activiteit naar een hoger niveau brengt.<br />
             </div>
           </div>
@@ -51,6 +51,8 @@ const Home = () => {
           <div className={Style.home__intro__box__image}>
             <img src={images.HomeBg} alt="laptop" className={Style.home__laptop} />
           </div>
+
+
         </div>
       </div>
 
@@ -59,9 +61,15 @@ const Home = () => {
           <div className={Style.home__content__block__title}>
             WEBSITE NODIG?
           </div>
-          <div className={Style.home__content__block__text}>
-            Een website is niet meer weg te denken als het gaat over het succes voor uw bedrijf.
-            De taak lijkt misschien een beetje ontmoedigend, maar <strong>G.WebDev</strong> helpt en begeleidt je tijdens het hele proces.
+
+          <div className={Style.home__content__block2}>
+            <div className={Style.home__content__block__title}>
+              WEB DEVELOPER IN GENT.
+            </div>
+            <div className={Style.home__content__block__text}>
+              Op zoek naar een ervaren web developer in Gent? <strong>G.WebDev</strong> is hier om jou te helpen!
+              Met uitgebreide kennis en vaardigheden in web development, bouwt <strong>G.WebDev</strong> een krachtige website voor jouw bedrijf.
+            </div>
           </div>
         </div>
 

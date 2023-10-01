@@ -8,5 +8,18 @@ import BgImage from './bg_image.jpg';
 import LaptopFrame from './LaptopFrame.png';
 import LaptopFrame2 from './LaptopFrame2.png';
 import ContentImage from './contentImage.jpg';
+import HexaBg from './hexagonal.png'
 
-export default { Logo, LogoWeb3, Web3, Web3_banner, Intro_1, HomeBg, BgImage, LaptopFrame, LaptopFrame2, ContentImage }
+export default {
+    Logo,
+    LogoWeb3,
+    Web3,
+    Web3_banner,
+    Intro_1,
+    HomeBg,
+    BgImage,
+    LaptopFrame,
+    LaptopFrame2,
+    ContentImage,
+    HexaBg
+}
