@@ -52,12 +52,85 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/* @media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1170px;
+  }
+
+
+} */
+
+/* @media screen and (max-width: 992px) {
+
+  .header__navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header__container {
+    width: var(--container-md);
+  }
+} */
+
+/* @media screen and (max-width: 991px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__navbar {
+    display: none;
+  }
+} */
+
+
+@media screen and (max-width: 991px) {
+
+  .header__container {
+    width: var(--container-sm);
+  }
+
+  .header__logo__box,
+  .header__navigation__box {
+    padding: .5rem;
+  }
+
+  .header__logo__box {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header__navigation__box {
+    display: flex;
+    justify-content: flex-end;
+  }
+=======
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 .header__sidebar {
   display: none;
 }
 
 
 @media screen and (max-width: 1024px) {
+<<<<<<< HEAD
 =======
 @media screen and (max-width: 1440px) {
   .header__container {
@@ -88,6 +161,9 @@
     justify-content: flex-end;
   }
 >>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
+=======
+>>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 
   .header__navbar {
     display: none;
@@ -135,7 +211,7 @@
 @media screen and (max-width: 400px) {
 
   .header__logo {
-    width: 200px;
+    width: 175px;
   }
 
   .header__box__right {
@@ -146,14 +222,29 @@
 
 >>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+  .sidebar {
+    display: flex;
+    justify-content: center;
+  }
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 
 }
 
 @media screen and (max-width: 425px) {
 
+<<<<<<< HEAD
   .header__logo {
     width: 175px;
   }
+=======
+  /* .header__logo {
+    width: 175px;
+  } */
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 
   /* .sidebar {
     width: 100%;
@@ -161,4 +252,9 @@
     margin-right: 125%;
     margin-top: 3rem;
   } */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 }

@@ -23,7 +23,16 @@
 .navbar__menu__list__item a {
   text-decoration: none;
   font-size: 1rem;
+<<<<<<< HEAD
   font-family: "Montserrat", sans-serif;
+=======
+<<<<<<< HEAD
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: black;
+=======
+>>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 }
 
 .navbar__menu__list__item a:hover {
@@ -43,7 +52,17 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1166px) {
+  .navbar__menu__list__item a {
+    font-size: .8rem;
+  }
+
+=======
+>>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 @media screen and (min-width: 768px) and (max-width: 1250px) {
+>>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
   .navbar__menu__list {
     gap: 2em;
 =======
