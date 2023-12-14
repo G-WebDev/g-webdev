@@ -1,38 +1,17 @@
-.navbar {
-<<<<<<< HEAD
-  width: 100%;
-
-=======
-  padding: .5rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
-}
-
 .navbar__menu {
-  display: flex;
-  justify-content: center;
-
+  padding: 1rem;
 }
 
 .navbar__menu__list {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   list-style: none;
-
 }
 
 .navbar__menu__list__item a {
   text-decoration: none;
-  font-size: 1rem;
-<<<<<<< HEAD
-  font-family: "Montserrat", sans-serif;
-=======
-<<<<<<< HEAD
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: black;
-=======
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
+  font-size: 1.5rem;
+  font-family: "Avenir", sans-serif; 
 }
 
 .navbar__menu__list__item a:hover {
@@ -51,21 +30,19 @@
   box-shadow: 0 2px var(--color-primary);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1166px) {
+/* @media screen and (max-width: 1166px) {
   .navbar__menu__list__item a {
     font-size: .8rem;
   }
+}
 
-=======
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 @media screen and (min-width: 768px) and (max-width: 1250px) {
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
+
   .navbar__menu__list {
     gap: 2em;
-=======
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .navbar__menu__list__item a {
     font-size: .7rem;
@@ -73,6 +50,5 @@
 
   .navbar__menu__list {
     gap: 1.8rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
   }
-}
+} */

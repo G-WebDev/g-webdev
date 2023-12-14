@@ -5,46 +5,18 @@
 }
 
 .footer__container {
-<<<<<<< HEAD
     width: var(--container-md);
     margin: 0 auto;
     text-align: center;
-=======
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
     border-top: .1px solid rgba(0, 0, 0, 0.100);
     width: var(--container-md);
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .footer__info__container {
     display: grid;
     grid-template-columns: [first] 1fr [line2] 1fr [line3] 1fr[end];
     grid-template-rows: [row1-start] max-content [row1-end];
-=======
-.footer__logo__box {
-    padding: 2rem;
-    margin-top: 15%;
-    margin-left: 3rem;
-}
-
-.footer__logo {
-    width: 200px;
-}
-
-.footer__gegevens__box {
-    padding: 2rem;
-    margin-left: 3rem;
-}
-
-
-
-.footer__gegevens__list {
-    list-style: none;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
     margin-top: 1rem;
 }
 
@@ -55,19 +27,8 @@
     margin: 2rem 0;
 }
 
-<<<<<<< HEAD
 .footer__info__container p {
     font-size: 1.2rem;
-=======
-.footer__paginas__list__item_socials a {
-    margin-left: 1rem;
-    font-size: 1rem;
-}
-
-.footer__gegevens__list__item a {
-    text-decoration: none;
-    color: var(--color-accent-3);
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
 }
 
 .footer__logo {
@@ -82,14 +43,9 @@
 
 .footer__info__list__item,
 .footer__paginas__list__item {
-<<<<<<< HEAD
     font-size: .9rem;
     margin-bottom: .7rem;
 
-=======
-    font-size: 14px;
-    margin-bottom: 1rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
 }
 
 .footer__info__list__item a,
@@ -103,7 +59,6 @@
     color: var(--color-primary);
 }
 
-<<<<<<< HEAD
 .footer__share__box {
     margin-bottom: 3rem;
 }
@@ -115,14 +70,6 @@
 
 .disclaimer__title {
     font-size: 1.2rem;
-=======
-.footer__disclaimer__box {
-    padding: 2rem;
-    font-size: 14px;
-    font-weight: 200;
-    letter-spacing: 1px;
-
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
 }
 
 .disclaimer__text {
@@ -222,7 +169,6 @@
     }
 }
 
-<<<<<<< HEAD
 
 @media screen and (max-width: 425px) {
 
@@ -245,35 +191,10 @@
     }
 
     .footer__info__list__item {
-=======
-.footer__deel__text a {
-    margin-left: 1.5rem;
-    font-size: 1rem;
-}
-
-@media screen and (max-width: 1024px) {
-    .footer__logo__box {
-        padding: 2rem;
-        margin-top: 30%;
-        margin-left: 0;
-    }
-
-    .footer__logo {
-        width: 150px;
-    }
-
-    .footer__gegevens__box {
-        margin-left: 0rem;
-    }
-
-    .footer__gegevens__box p,
-    .footer__paginas__box p {
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
         font-size: 12px;
     }
 
     .footer__paginas__box {
-<<<<<<< HEAD
         text-align: center;
     }
 
@@ -305,26 +226,5 @@
 
     .footer__disclaimer__list__item {
         margin-top: .7rem;
-=======
-        margin-left: 2.5rem;
-    }
-
-    .footer__gegevens__list__item,
-    .footer__paginas__list__item {
-        font-size: 11px;
-    }
-
-    .footer__disclaimer__box {
-        padding: 1rem;
-        font-size: 11px;
-    }
-
-    .footer__disclaimer__list__box {
-        margin-left: 2rem;
-    }
-
-    .footer__deel__box {
-        margin-left: 2rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
     }
 }

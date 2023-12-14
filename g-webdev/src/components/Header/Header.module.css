@@ -1,49 +1,26 @@
-<<<<<<< HEAD
-.header__container {
-  width: var(--container-md);
-  margin: 0 auto;
-  margin-top: 2rem;
-  display: flex;
-}
-
-.header__box__left {
-  display: flex;
-  justify-content: end;
-  width: 30%;
-}
-
-.header__box__right {
-  width: 70%;
-  display: flex;
-  justify-content: end;
-  padding-top: 2rem;
-}
-
-.header__logo {
-  width: 350px;
-=======
 .header {
-  width: 100%;
   padding: 1rem;
 }
 
 .header__container {
-  width: var(--container-xxl);
+  width: var(--container-sm);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
 
-
+.header__logo__box,
+.header__navigation__box {
+  padding: 2rem;
+}
 
 .header__logo {
-  width: 200px;
+  width: 300px;
 }
 
 .header__navbar {
-  margin-top: .5rem;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
+  padding: 1rem;
 }
 
 .hamburger,
@@ -51,19 +28,13 @@
   display: none;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header__container {
     width: 1170px;
   }
+}
 
-
-} */
-
-/* @media screen and (max-width: 992px) {
-
+@media screen and (max-width: 992px) {
   .header__navbar {
     display: none;
   }
@@ -79,11 +50,11 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
   .header__container {
     width: var(--container-md);
   }
-} */
+}  */
 
 /* @media screen and (max-width: 991px) {
   .hamburger {
@@ -101,16 +72,14 @@
   }
 } */
 
-
-@media screen and (max-width: 991px) {
-
+/* @media screen and (max-width: 991px) {
   .header__container {
     width: var(--container-sm);
   }
 
   .header__logo__box,
   .header__navigation__box {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .header__logo__box {
@@ -122,33 +91,29 @@
     display: flex;
     justify-content: flex-end;
   }
-=======
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
-.header__sidebar {
-  display: none;
+
+  .header__sidebar {
+    display: none;
+  }
 }
 
-
 @media screen and (max-width: 1024px) {
-<<<<<<< HEAD
-=======
+}
+
 @media screen and (max-width: 1440px) {
   .header__container {
     width: var(--container-md);
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
-
   .header__container {
     width: var(--container-sm);
   }
 
   .header__logo__box,
   .header__navigation__box {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   .header__logo__box {
@@ -160,10 +125,6 @@
     display: flex;
     justify-content: flex-end;
   }
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
-=======
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 
   .header__navbar {
     display: none;
@@ -179,25 +140,22 @@
 
   .header__box__left {
     display: flex;
-<<<<<<< HEAD
+
     justify-content: start;
     width: 30%;
-=======
+
     position: absolute;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
   }
 
   .header__box__right {
     width: 70%;
     display: flex;
-<<<<<<< HEAD
     justify-content: end;
     padding-top: 2rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-
   .header__logo {
     width: 250px;
   }
@@ -209,7 +167,6 @@
 }
 
 @media screen and (max-width: 400px) {
-
   .header__logo {
     width: 175px;
   }
@@ -217,44 +174,24 @@
   .header__box__right {
     padding-top: 0rem;
     padding-left: 12rem;
-=======
     justify-content: center;
-
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
   .sidebar {
     display: flex;
     justify-content: center;
   }
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
-
-}
+} */
 
 @media screen and (max-width: 425px) {
-
-<<<<<<< HEAD
   .header__logo {
     width: 175px;
   }
-=======
-  /* .header__logo {
-    width: 175px;
-  } */
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
 
-  /* .sidebar {
+  .sidebar {
     width: 100%;
     display: flex;
     margin-right: 125%;
     margin-top: 3rem;
-  } */
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
+  }
 }

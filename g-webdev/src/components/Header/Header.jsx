@@ -8,8 +8,8 @@ import Style from "./Header.module.css";
 import images from "../../Assets/Images";
 
 // IMPORT INTERN COMPONENTS
-import NavBar from "../navbar/Navbar";
-import SideBar from "../sidebar/SideBar";
+import NavBar from "./navbar/Navbar";
+import SideBar from "./sidebar/SideBar";
 
 // IMPORT EXTERN COMPONENTS
 import { Spin as Hamburger } from "hamburger-react";
@@ -20,7 +20,6 @@ const Header = () => {
   return (
     <div className={Style.header}>
       <div className={Style.header__container}>
-
         <div className={Style.header__logo__box}>
           <Link to="/" target="blank">
             <img src={images.Logo} alt="logo" className={Style.header__logo} />
@@ -32,13 +31,15 @@ const Header = () => {
             <NavBar />
           </div>
 
-
           <div className={Style.hamburger}>
-            <Hamburger duration={1} toggled={openSideBar} size={25} toggle={setOpenSideBar} />
+            <Hamburger
+              duration={1}
+              toggled={openSideBar}
+              size={25}
+              toggle={setOpenSideBar}
+            />
           </div>
-
         </div>
-
       </div>
 
       {openSideBar && (
@@ -46,7 +47,6 @@ const Header = () => {
           <SideBar />
         </div>
       )}
-
     </div>
   );
 };

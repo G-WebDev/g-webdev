@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 @media screen and (max-width: 992px) {
     .sidebar {
         margin-top: 2rem;
     }
-=======
->>>>>>> 9f8c5ac500a8f48ca0dde76feb2d885742a68925
+}
+
 @media screen and (max-width: 1024px) {
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
+
 
     .sidebar__container {
         width: var(--container-sm);
@@ -32,12 +30,7 @@
 
     .sidebar__list__item a {
         text-decoration: none;
-<<<<<<< HEAD
         color: black;
-=======
-        font-size: 1rem;
-        font-weight: 500;
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
     }
 
     .sidebar__list__item a:hover {
@@ -51,14 +44,6 @@
         transition: all 0.5s ease;
     }
 
-<<<<<<< HEAD
-
-=======
-    .sidebar__list__item:hover .item_line {
-        margin: 0 45%;
-        box-shadow: 0 2px var(--color-primary);
-    }
->>>>>>> 9c89fedb9e6a9c2dfbae4daa55c0f8a41b11d009
 }
 
 
@@ -70,7 +55,9 @@
 
     .sidebar__list__item a {
         font-size: 1rem;
-=======
+    }
+}
+
 @media screen and (max-width: 768px) {
     .sidebar {
         margin-top: 2rem;
@@ -134,7 +121,7 @@
 
     .item_line {
         margin: 0 48%;
->>>>>>> fd3dff5b740d525099517d1c20f4e60b09817585
+ 
     }
 
 }
