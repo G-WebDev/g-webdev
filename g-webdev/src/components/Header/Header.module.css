@@ -6,13 +6,13 @@
   width: var(--container-sm);
   margin: 0 auto;
   display: flex;
-  justify-content: center;
   gap: 5rem;
+  border: 2px solid red;
 }
 
-.header__logo__box,
 .header__navigation__box {
-  padding: 2rem;
+  margin: 0 auto;
+  border: 2px solid green;
 }
 
 .header__logo {
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .header__navbar {
     display: none;
   }
