@@ -1,0 +1,82 @@
+.home__content__main__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  
+  .home__content__main__img__box {
+    background-image: url("../../../Assets/Images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .home__content__main__box__col1,
+  .home__content__main__box__col2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .home__content__main__box1,
+  .home__content__main__box2,
+  .home__content__main__box3,
+  .home__content__main__box4 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .content__line,
+  .border__line__up__right,
+  .content__text__line {
+    padding: 0.5rem;
+    box-shadow: 0 1px var(--color-text-dark);
+    transition: all 0.7s ease;
+  }
+  
+  .home__content__main__box1:hover,
+  .home__content__main__box2:hover,
+  .home__content__main__box3:hover,
+  .home__content__main__box4:hover {
+    background-color: var(--color-primary);
+  }
+  
+  .home__content__main__box1:hover .content__line,
+  .home__content__main__box2:hover .content__line,
+  .home__content__main__box3:hover .content__line,
+  .home__content__main__box4:hover .content__line {
+    margin: 0 4%;
+    margin-right: 60%;
+    box-shadow: 0 2px var(--color-bg-light);
+  }
+  
+  .home__content__main__box1:hover .border__line__up__right,
+  .home__content__main__box2:hover .border__line__up__right,
+  .home__content__main__box3:hover .border__line__up__right,
+  .home__content__main__box4:hover .border__line__up__right {
+    margin-right: 50%;
+  }
+  
+  .home__content__main__box1:hover .content__text__line,
+  .home__content__main__box2:hover .content__text__line,
+  .home__content__main__box3:hover .content__text__line,
+  .home__content__main__box4:hover .content__text__line {
+    margin: 0 30%;
+    box-shadow: 0 2px black;
+  }
+  
+  .home__content__main__box1,
+  .home__content__main__box2 {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .home__content__main__box__title {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 2rem;
+  }
+  
+  .home__content__main__box__text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0 3rem;
+    margin: 3rem 0;
+  }

@@ -5,11 +5,11 @@ import './App.css';
 // IMPORT INTERN COMPONENTS
 import Header from "./components/header/Header";
 
-import About from './pages/About/About';
-import Home from './pages/Home/Home';
-import Projects from './pages/Projects/Projects';
-import Diensten from './pages/Diensten/Diensten';
-import Contact from "./pages/Contact/Contact";
+import About from './Pages/About/About';
+import Home from './Pages/Home/Home';
+import Projects from './Pages/Projects/Projects';
+import Diensten from './Pages/Diensten/Diensten';
+import Contact from "./Pages/Contact/Contact";
 // import Footer from "./components/footer/Footer";
 
 

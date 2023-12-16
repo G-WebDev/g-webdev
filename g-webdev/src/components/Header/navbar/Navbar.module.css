@@ -1,10 +1,12 @@
+/* Mobile First Styles */
+
 .navbar__menu {
   padding: 1rem;
 }
 
 .navbar__menu__list {
   display: flex;
-  gap: 50px;
+  gap: 20px; /* Adjusted for better spacing on small screens */
   list-style: none;
 }
 
@@ -14,12 +16,8 @@
   font-family: "Avenir", sans-serif;
 }
 
-.navbar__menu__list__item a:hover {
-  color: var(--color-primary);
-}
-
 .item__line {
-  margin: 0 35%;
+  margin: 0 10%; /* Adjusted for better spacing on small screens */
   padding: 0.5rem;
   box-shadow: 0 1px var(--color-text-dark);
   transition: all 0.7s ease;
@@ -30,44 +28,24 @@
   box-shadow: 0 2px var(--color-primary);
 }
 
-/* @media screen and (max-width: 1180px) {
-  .navbar__menu__list__item a {
-    font-size: 1.2rem;
-  }
-} */
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
+/* Media Query for Tablets */
+@media screen and (min-width: 768px) {
   .navbar__menu__list {
     gap: 25px;
   }
 
   .navbar__menu__list__item a {
-    font-size: 1rem;
-  }
-
-  }
-
-  @media screen and (min-width: 1201px) and (max-width: 1440px) {
-
-    .navbar__menu__list__item a {
-      font-size: 1.1rem;
-    }
-    }
-
-/*@media screen and (min-width: 768px) and (max-width: 1250px) {
-
-  .navbar__menu__list {
-    gap: 2em;
+    font-size: 1.2rem; /* Adjusted font size for tablets */
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .navbar__menu__list__item a {
-    font-size: .7rem;
+/* Media Query for Laptops */
+@media screen and (min-width: 1024px) {
+  .navbar__menu__list {
+    gap: 50px; /* Adjusted gap for larger screens */
   }
 
-  .navbar__menu__list {
-    gap: 1.8rem;
+  .navbar__menu__list__item a {
+    font-size: 1.5rem; /* Restoring original font size for laptops and larger screens */
   }
-} */
+}
