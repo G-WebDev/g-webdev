@@ -1,19 +1,17 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
-
 }
 
 body {
-  font-family: "Avenir","Poppins","Montserrat", sans-serif;
+  font-family: "Avenir", "Poppins", "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--color-bg-light);
+  background: var(--color-accent-2);
 }
 
 :root {
@@ -31,7 +29,7 @@ body {
 
   --color-bg-dark: #696969;
   --color-bg-dark-2: #808080;
-  --color-bg-dark-3: #A9A9A9;
+  --color-bg-dark-3: #a9a9a9;
 
   --color-accent-1: #e9d9c7;
   --color-accent-2: #f2e9e9;

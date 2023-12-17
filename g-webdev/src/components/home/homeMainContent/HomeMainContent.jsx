@@ -19,8 +19,8 @@ const HomeMainContent = () => {
             <div className={Style.content__text__line}></div>
             <br />
             Een aantrekkelijke website die zowel informatief als interactief is?
-            Met ervaren en passioneel webdesign leveren wij bij{" "}
-            <strong>G.WebDev</strong> voor elk bedrijf het beste en meest
+            Met ervaren en passioneel webdesign leveren wij bij
+            <strong> G.WebDev</strong> voor elk bedrijf het beste en meest
             bevredigende eindresultaat. Straal expertise en persoonlijkheid uit
             met een krachtig webdesign: zo win je gegarandeerd klanten.
             <div className={Style.content__text__line}></div>
@@ -38,8 +38,8 @@ const HomeMainContent = () => {
             <br />
             Beheer je klanten en producten met een eenvoudig en doelgericht
             systeem. Zo bespaar je tijd én geld: een snelle manier om je leven
-            een pak aangenamer en overzichtelijker te maken. Daar zet{" "}
-            <strong>G.WebDev</strong> zich maar al te graag voor in!
+            een pak aangenamer en overzichtelijker te maken. Daar zet
+            <strong> G.WebDev</strong> zich maar al te graag voor in!
             <div className={Style.content__text__line}></div>
           </div>
         </div>
@@ -76,8 +76,8 @@ const HomeMainContent = () => {
             <br />
             Met een gepersonaliseerde mobiele applicatie vestig je je als een
             moderne business waar de smartphone niet meer uit weg te denken is.
-            Geen nood meer om voor elke taak naar je laptop te snellen dankzij
-            de mobiele applicatie. Overal en altijd bereikbaar: dat is het doel.
+            Geen nood meer om naar je laptop te snellen dankzij de mobiele
+            applicatie. Overal en altijd bereikbaar: dat is het doel.
             <div className={Style.content__text__line}></div>
             <br />
           </div>

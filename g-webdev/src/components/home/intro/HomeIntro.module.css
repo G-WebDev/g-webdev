@@ -1,25 +1,25 @@
-.home__intro__container{
-  padding: 1rem;
+/* Mobile First Styles */
 
-  border: 2px solid red;
+.home__intro__container {
+  padding: 1rem;
 }
 
 .home__intro__title__box {
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .home__intro__title {
-  font-size: 4.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: #333;
+
   text-align: center;
-  letter-spacing: 0.4rem;
+  color: var(--color-text-dark);
 }
 
 .home__intro__text__box {
-  margin-top: 5rem;
+  margin-top: 2rem;
   animation: introTextAnimation 2s ease-in;
   animation-direction: alternate;
 }
@@ -35,31 +35,31 @@
 }
 
 .home__intro__text {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   font-weight: 400;
-  color: #333; /* Adjust the color as needed */
+  color: var(--color-text-dark); /* Adjust the color as needed */
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .home__intro__text strong {
   font-weight: 700;
-  color: #333; /* Adjust the color as needed */
+  color: var(--color-text-dark); /* Adjust the color as needed */
 }
 
-.home__intro__box__image {
+.home__intro__image__box {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
-  animation: imageAnimation 2s ease-out;
+  animation: imageAnimation 4s ease-in;
   animation-direction: alternate;
 }
 
 @keyframes imageAnimation {
   from {
     opacity: 0;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
   }
 
   to {
@@ -68,5 +68,44 @@
 }
 
 .home__laptop {
-  width: 750px;
+  width: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .home__intro__container {
+    padding: 3rem;
+  }
+
+  .home__intro__title {
+    font-size: 1.2rem;
+  }
+
+  .home__intro__text {
+    font-size: .9rem;
+  }
+
+  .home__laptop {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__intro__title {
+    font-size: 1.4rem;
+  }
+
+  .home__intro__text {
+    font-size: 1.1rem;
+  }
+
+  .home__laptop {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .home__laptop {
+    width: 850px;
+  }
 }

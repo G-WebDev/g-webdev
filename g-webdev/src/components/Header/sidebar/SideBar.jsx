@@ -9,7 +9,9 @@ const SideBar = () => {
     <div className={Style.sidebar}>
       <ul className={Style.sidebar__menu__list}>
         <li className={Style.sidebar__list__item}>
-          <Link to="/" target="blank">Home</Link>
+          <Link to="/" target="blank">
+            Home
+          </Link>
           <div className={Style.item_line}></div>
         </li>
 

@@ -29,6 +29,7 @@
   display: none;
 }
 
+
 /* Media Query for Tablets */
 @media screen and (min-width: 768px) {
   .header__logo {
@@ -45,5 +46,6 @@
 
   .header__navbar {
     display: flex;
+    margin-top: 2rem;
   }
 }

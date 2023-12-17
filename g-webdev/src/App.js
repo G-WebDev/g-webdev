@@ -10,7 +10,7 @@ import Home from './Pages/Home/Home';
 import Projects from './Pages/Projects/Projects';
 import Diensten from './Pages/Diensten/Diensten';
 import Contact from "./Pages/Contact/Contact";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Route path="projecten" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

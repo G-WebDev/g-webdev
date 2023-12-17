@@ -1,8 +1,7 @@
 /* Mobile First Styles */
 
 .sidebar {
-  display: flex;
-  justify-content: center;
+
   margin-top: 2rem;
   text-align: center;
 }
@@ -34,7 +33,7 @@
 }
 
 .item_line {
-  margin: 0 35%;
+  margin: 0 48%;
   padding: 0.5rem;
   box-shadow: 0 1px var(--color-text-dark);
 }
