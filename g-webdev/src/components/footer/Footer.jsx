@@ -12,88 +12,92 @@ import images from "../../Assets/Images";
 const Footer = () => {
   return (
     <div className={Style.footer}>
+
       <div className={Style.footer__container__top}>
+
         <div className={Style.footer__logo__box}>
           <Link to="/" target="blank">
             <img src={images.Logo} alt="logo" className={Style.footer__logo} />
           </Link>
         </div>
+        
+        <div className={Style.footer__info__box}>
+          <div className={Style.footer__gegevens__box}>
+            <p className={Style.footer__gegevens__title}>GEGEVENS</p>
 
-        <div className={Style.footer__gegevens__box}>
-          <p className={Style.footer__gegevens__title}>GEGEVENS</p>
+            <ul className={Style.footer__gegevens__list}>
+              <li className={Style.footer__gegevens__list__item}>
+                <a href="mailto: g-webdev@outlook.com">g-webdev@outlook.com</a>
+              </li>
 
-          <ul className={Style.footer__gegevens__list}>
-            <li className={Style.footer__gegevens__list__item}>
-              <a href="mailto: g-webdev@outlook.com">g-webdev@outlook.com</a>
-            </li>
+              <li className={Style.footer__gegevens__list__item}>
+                <a href="tel: +32 470 38 49 95">+32 470 38 49 95</a>
+              </li>
 
-            <li className={Style.footer__gegevens__list__item}>
-              <a href="tel: +32 470 38 49 95">+32 470 38 49 95</a>
-            </li>
+              <li className={Style.footer__gegevens__list__item}>
+                Jozef Guislainstraat 39 <br /> 9000 Gent
+              </li>
 
-            <li className={Style.footer__gegevens__list__item}>
-              Jozef Guislainstraat 39 <br /> 9000 Gent
-            </li>
+              <li className={Style.footer__gegevens__list__item}>
+                BTW BE123.456.789
+              </li>
 
-            <li className={Style.footer__gegevens__list__item}>
-              BTW BE123.456.789
-            </li>
+              <li className={Style.footer__gegevens__list__item}>
+                <div className={Style.footer__gegevens__list__item_socials}>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100089783126960"
+                    target="blank"
+                  >
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </a>
 
-            <li className={Style.footer__gegevens__list__item}>
-              <div className={Style.footer__gegevens__list__item_socials}>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100089783126960"
-                  target="blank"
-                >
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </a>
+                  <a href="/" target="blank">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
 
-                <a href="/" target="blank">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
+                  <a href="/" target="blank">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
 
-                <a href="/" target="blank">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
+                  <a href="/" target="blank">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                <a href="/" target="blank">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
+          <div className={Style.footer__paginas__box}>
+            <p className={Style.footer__paginas__title}>PAGINA'S</p>
 
-        <div className={Style.footer__paginas__box}>
-          <p className={Style.footer__paginas__title}>PAGINA'S</p>
-
-          <ul className={Style.footer__paginas__list}>
-            <li className={Style.footer__paginas__list__item}>
-              <Link to="/" target="blank">
-                Home
-              </Link>
-            </li>
-            <li className={Style.footer__paginas__list__item}>
-              <Link to="/about" target="blank">
-                About Me
-              </Link>
-            </li>
-            <li className={Style.footer__paginas__list__item}>
-              <Link to="/diensten" target="blank">
-                Diensten
-              </Link>
-            </li>
-            <li className={Style.footer__paginas__list__item}>
-              <Link to="/projecten" target="blank">
-                Projecten
-              </Link>
-            </li>
-            <li className={Style.footer__paginas__list__item}>
-              <Link to="/contact" target="blank">
-                Contact
-              </Link>
-            </li>
-          </ul>
+            <ul className={Style.footer__paginas__list}>
+              <li className={Style.footer__paginas__list__item}>
+                <Link to="/" target="blank">
+                  Home
+                </Link>
+              </li>
+              <li className={Style.footer__paginas__list__item}>
+                <Link to="/about" target="blank">
+                  About Me
+                </Link>
+              </li>
+              <li className={Style.footer__paginas__list__item}>
+                <Link to="/diensten" target="blank">
+                  Diensten
+                </Link>
+              </li>
+              <li className={Style.footer__paginas__list__item}>
+                <Link to="/projecten" target="blank">
+                  Projecten
+                </Link>
+              </li>
+              <li className={Style.footer__paginas__list__item}>
+                <Link to="/contact" target="blank">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 

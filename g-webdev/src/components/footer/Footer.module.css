@@ -114,4 +114,20 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .footer__container__top {
+    display: block;
+
+    padding-top: 5rem;
+  }
+
+  .footer__info__box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+
+  .footer__paginas__box {
+    margin: 0;
+  }
 }
