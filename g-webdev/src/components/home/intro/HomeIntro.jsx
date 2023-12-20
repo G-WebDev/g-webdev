@@ -31,8 +31,7 @@ const HomeIntro = () => {
 
   return (
     <div className={Style.home__intro__container}>
-
-<div className={Style.home__intro__title__box}>
+      <div className={Style.home__intro__title__box}>
         <h1 className={Style.home__intro__title}>
           <span style={{ whiteSpace: "pre" }} ref={intro} />
         </h1>
@@ -48,8 +47,10 @@ const HomeIntro = () => {
 
         <p className={Style.home__intro__text}>
           Are you in need of a captivating website or searching for a skilled
-          web developer in Gent? Look no further!
+          web developer in Gent?
         </p>
+
+        <p className={Style.home__intro__text}>Look no further!</p>
 
         <p className={Style.home__intro__text}>
           Let's transform your online vision into a compelling digital reality.

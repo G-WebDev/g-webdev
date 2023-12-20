@@ -20,6 +20,7 @@
 
 .home__intro__text__box {
   margin-top: 2rem;
+  padding: 0 2rem;
   animation: introTextAnimation 2s ease-in;
   animation-direction: alternate;
 }
@@ -35,17 +36,17 @@
 }
 
 .home__intro__text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   font-weight: 400;
-  color: var(--color-text-dark); /* Adjust the color as needed */
+  color: var(--color-text-dark);
   text-align: center;
   margin-top: 1rem;
 }
 
 .home__intro__text strong {
   font-weight: 700;
-  color: var(--color-text-dark); /* Adjust the color as needed */
+  color: var(--color-text-dark);
 }
 
 .home__intro__image__box {

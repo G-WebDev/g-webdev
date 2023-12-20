@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // IMPORT INTERN STYLE
 import Style from "./About.module.css";
@@ -13,16 +12,40 @@ const Web3 = () => {
         <div className={Style.intro__box}>
           <div className={Style.intro__text}>
             <div className={Style.intro__welcome__box}>
-              Welkom bij <h1 className={Style.title__name__gwebdev}>G.WebDev</h1>
+              Welcome to
+              <h1 className={Style.title__name__gwebdev}> G.WebDev</h1>
               <br />
-              <div className={Style.slogan}>Uw betrouwbare partner in webontwikkeling.</div>
+              <div className={Style.slogan}>
+                {/* Uw betrouwbare partner in webontwikkeling. */}
+                Your reliable partner in web development.
+              </div>
             </div>
 
             {/* <div className={Style.home__banner}> */}
 
             <div className={Style.intro_box}>
               <div className={Style.intro__text}>
-                Mijn naam is <h1 className={Style.title__name}>Gwen</h1>,
+                <p>
+                  My name is Gwen, I am the founder of G.WebDev and
+                  professional web developer with experience in creating
+                  functional and beautiful websites.
+                </p>
+
+                <p>
+                  Whether you're a small start-up or a large enterprise, I'm
+                  here to take your online presence to the next level.
+                </p>
+
+                <p>
+                  From designing a new website to maintaining your existing
+                  website, I am passionate about helping you achieve your online
+                  goals. I bring your ideas to life through innovative and
+                  user-friendly web designs. Contact me for more information or
+                  to discuss how I can help your business grow online in a
+                  digital age.
+                </p>
+
+                {/* Mijn naam is <h1 className={Style.title__name}>Gwen</h1>,
                 <br />
                 ik ben een professionele web developer met ervaring in het creëren van functionele en
                 mooie websites.
@@ -45,7 +68,7 @@ const Web3 = () => {
                   </Link>{" "}
                   op voor meer informatie of om te bespreken hoe ik uw bedrijf online kan helpen groeien
                   in een digitaal tijdperk.
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

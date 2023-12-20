@@ -23,15 +23,15 @@ const NavBar = () => {
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/diensten" target="blank">
-            Diensten
+          <Link to="/services" target="blank">
+            Services
           </Link>
           <div className={Style.item__line}></div>
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/projecten" target="blank">
-            Projecten
+          <Link to="/projects" target="blank">
+            Projects
           </Link>
           <div className={Style.item__line}></div>
         </li>

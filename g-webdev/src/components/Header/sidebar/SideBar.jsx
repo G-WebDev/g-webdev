@@ -23,14 +23,14 @@ const SideBar = () => {
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/diensten" target="blank">
+          <Link to="/services" target="blank">
             Diensten
           </Link>
           <div className={Style.item_line}></div>
         </li>
 
         <li className={Style.sidebar__list__item}>
-          <Link to="/projecten" target="blank">
+          <Link to="/projects" target="blank">
             Projecten
           </Link>
           <div className={Style.item_line}></div>
