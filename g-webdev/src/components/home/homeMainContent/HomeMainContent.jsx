@@ -83,11 +83,9 @@ const HomeMainContent = () => {
 
   return (
     <div className={Style.home__content__main__box}>
-
       <div className={Style.home__content__main__img__box}></div>
 
       <div className={Style.home__content__main__box__container}>
-
         <div className={Style.home__content__main__box1}>
           <div className={Style.home__content__main__box__title}>
             WEBDESIGN
@@ -102,7 +100,10 @@ const HomeMainContent = () => {
             <strong> G.WebDev</strong> deliver the best and most satisfying end
             result for every company. Radiate expertise and personality with a
             powerful web design. This way you are guaranteed to win customers.
-            <div className={Style.content__text__line__bottom} ref={line2}></div>
+            <div
+              className={Style.content__text__line__bottom}
+              ref={line2}
+            ></div>
           </div>
         </div>
 
@@ -119,7 +120,10 @@ const HomeMainContent = () => {
             system. This way you save time and money. A quick way to make your
             life a lot more pleasant and clearer. <strong> G.WebDev</strong> is
             more than happy to commit to this!
-            <div className={Style.content__text__line__bottom} ref={line4}></div>
+            <div
+              className={Style.content__text__line__bottom}
+              ref={line4}
+            ></div>
           </div>
         </div>
 
@@ -142,7 +146,10 @@ const HomeMainContent = () => {
             groei tot een succesvolle en globale winkel. Expand your limits
             before it's late! Samen bouwen we uw online winkel met een moderne
             webdesign. Hierbij kunt u rekenen op <strong>G.WebDev</strong>! */}
-            <div className={Style.content__text__line__bottom} ref={line6}></div>
+            <div
+              className={Style.content__text__line__bottom}
+              ref={line6}
+            ></div>
             <br />
           </div>
         </div>
@@ -160,11 +167,13 @@ const HomeMainContent = () => {
             modern business where the smartphone is indispensable. No more need
             to rush to your laptop thanks to the mobile application. Available
             anywhere and anytime: that is the goal.
-            <div className={Style.content__text__line__bottom} ref={line8}></div>
+            <div
+              className={Style.content__text__line__bottom}
+              ref={line8}
+            ></div>
             <br />
           </div>
         </div>
-
       </div>
     </div>
   );

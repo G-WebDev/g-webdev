@@ -80,8 +80,8 @@
     padding: 1.2rem;
   }
 
-  .home__content__block__text { 
-    font-size: .8rem;   
+  .home__content__block__text {
+    font-size: 0.8rem;
     padding: 3rem 1rem;
   }
 
@@ -89,7 +89,7 @@
     transform: rotate(2deg);
     scale: 1.05;
     animation: turn 1s;
-}
+  }
 }
 
 @media screen and (min-width: 1440px) {

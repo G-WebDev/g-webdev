@@ -18,7 +18,6 @@ const Footer = () => {
   return (
     <div className={Style.footer}>
       <div className={Style.footer__container__top}>
-       
         <div className={Style.footer__logo__box}>
           <Link to="/" target="blank">
             <img src={images.Logo} alt="logo" className={Style.footer__logo} />
@@ -26,9 +25,8 @@ const Footer = () => {
         </div>
 
         <div className={Style.footer__info__box}>
-         
           <div className={Style.footer__gegevens__box}>
-          <p className={Style.footer__gegevens__title}>GEGEVENS</p>
+            <p className={Style.footer__gegevens__title}>GEGEVENS</p>
             <ul className={Style.footer__gegevens__list}>
               <li className={Style.footer__gegevens__list__item}>
                 <Link to="mailto: g-webdev@outlook.com">

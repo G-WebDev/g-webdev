@@ -142,7 +142,7 @@
 @media screen and (min-width: 1024px) {
   .home__content__main__box {
     display: grid;
-  
+
     grid-template-rows: 1fr;
   }
 
@@ -176,7 +176,7 @@
     height: 900px;
   }
 
-   .home__content__main__box__text {
+  .home__content__main__box__text {
     margin: 3rem 7rem;
   }
 
@@ -184,4 +184,3 @@
     height: 900px;
   }
 }
-

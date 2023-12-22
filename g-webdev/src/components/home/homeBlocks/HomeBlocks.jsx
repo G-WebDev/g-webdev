@@ -71,7 +71,6 @@ const HomeBlocks = () => {
 
   return (
     <div className={Style.home__content__blocks}>
-      
       <div className={Style.home__content__block1}>
         <div className={Style.home__content__block__title} ref={title1}>
           NEED A WEBSITE?
