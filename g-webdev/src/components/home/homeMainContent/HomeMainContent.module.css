@@ -1,15 +1,19 @@
+/* Mobile First Styles */
+
 .home__content__main__box {
   display: block;
 }
 
 .home__content__main__img__box {
-  display: block;
+  background-image: url("../../../Assets/Images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.home__content__main__box__col1,
-.home__content__main__box__col2 {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+.home__content__main__box__container {
+  display: block;
 }
 
 .home__content__main__box1,
@@ -20,13 +24,44 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.content__line,
-.border__line__up__right,
-.content__text__line {
-  margin: 0 25%;
+.content__title__line {
+  margin: 0 4%;
+  margin-right: 80%;
   padding: 0.5rem;
   box-shadow: 0 1px var(--color-text-dark);
   transition: all 0.7s ease;
+}
+
+.content__text__line__top,
+.content__text__line__bottom {
+  margin: 0 20%;
+  padding: 0.5rem;
+  box-shadow: 0 1px var(--color-text-dark);
+  transition: all 0.7s ease;
+}
+
+.content__text__line__top {
+  opacity: 0; /* Set the initial opacity to 0 */
+  transform: rotate(180deg); /* Set the initial transform */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.content__text__line__bottom {
+  opacity: 0; /* Set the initial opacity to 0 */
+  transform: rotate(-180deg); /* Set the initial transform */
+  transition: opacity 0.5s, transform 0.3s;
+}
+
+.content__text__line1__visible,
+.content__text__line2__visible,
+.content__text__line3__visible,
+.content__text__line4__visible,
+.content__text__line5__visible,
+.content__text__line6__visible,
+.content__text__line7__visible,
+.content__text__line8__visible {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 .home__content__main__box1:hover,
@@ -36,32 +71,35 @@
   background-color: var(--color-primary);
 }
 
-.home__content__main__box1:hover .content__line,
-.home__content__main__box2:hover .content__line,
-.home__content__main__box3:hover .content__line,
-.home__content__main__box4:hover .content__line {
+.home__content__main__box1:hover .content__title__line,
+.home__content__main__box2:hover .content__title__line,
+.home__content__main__box3:hover .content__title__line,
+.home__content__main__box4:hover .content__title__line {
   margin: 0 4%;
-  margin-right: 60%;
+  margin-right: 70%;
   box-shadow: 0 2px var(--color-bg-light);
 }
 
-.home__content__main__box1:hover .border__line__up__right,
-.home__content__main__box2:hover .border__line__up__right,
-.home__content__main__box3:hover .border__line__up__right,
-.home__content__main__box4:hover .border__line__up__right {
-  margin-right: 50%;
-}
-
-.home__content__main__box1:hover .content__text__line,
-.home__content__main__box2:hover .content__text__line,
-.home__content__main__box3:hover .content__text__line,
-.home__content__main__box4:hover .content__text__line {
+.home__content__main__box1:hover .content__text__line__top,
+.home__content__main__box2:hover .content__text__line__top,
+.home__content__main__box3:hover .content__text__line__top,
+.home__content__main__box4:hover .content__text__line__top {
   margin: 0 30%;
   box-shadow: 0 2px black;
+  transition: all 0.7s ease;
+}
+
+.home__content__main__box1:hover .content__text__line__bottom,
+.home__content__main__box2:hover .content__text__line__bottom,
+.home__content__main__box3:hover .content__text__line__bottom,
+.home__content__main__box4:hover .content__text__line__bottom {
+  margin: 0 30%;
+  box-shadow: 0 2px black;
+  transition: all 0.7s ease;
 }
 
 .home__content__main__box1,
-.home__content__main__box2 {
+.home__content__main__box3 {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -73,25 +111,16 @@
 
 .home__content__main__box__text {
   font-size: 0.8rem;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 400;
   padding: 0 3rem;
   margin: 3rem 0;
 }
 
 /* Media Query for Tablets */
 @media screen and (min-width: 768px) {
-  .home__content__main__box {
-    display: grid;
-
-    grid-template-rows: 1.2fr 1fr 1fr;
-  }
-
   .home__content__main__img__box {
-    display: block;
-    background-image: url("../../../Assets/Images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 600px;
   }
 
   .home__content__main__box1,
@@ -100,13 +129,26 @@
   .home__content__main__box4 {
     padding: 4rem;
   }
+
+  .home__content__main__box__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    padding: 0 3rem;
+    margin: 3rem 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .home__content__main__box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  
     grid-template-rows: 1fr;
+  }
+
+  .home__content__main__box__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .home__content__main__box1,
@@ -115,4 +157,31 @@
   .home__content__main__box4 {
     padding: 0.8rem;
   }
+
+  .home__content__main__box__title {
+    padding: 3rem;
+  }
+
+  .home__content__main__box__text {
+    margin: 3rem 2rem;
+  }
+
+  .home__content__main__img__box {
+    height: 600px;
+  }
 }
+
+@media screen and (min-width: 1440px) {
+  .home__content__main__img__box {
+    height: 900px;
+  }
+
+   .home__content__main__box__text {
+    margin: 3rem 7rem;
+  }
+
+  .home__content__main__img__box {
+    height: 900px;
+  }
+}
+

@@ -4,27 +4,12 @@
   padding: 1rem;
 }
 
-.home__intro__title__box {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.home__intro__title {
-  font-size: 1rem;
-  font-weight: 700;
-
-  text-align: center;
-  color: var(--color-text-dark);
-}
-
 .home__intro__text__box {
   margin-top: 2rem;
   padding: 0 2rem;
   animation: introTextAnimation 2s ease-in;
   animation-direction: alternate;
 }
-
 @keyframes introTextAnimation {
   from {
     opacity: 0;
@@ -40,7 +25,6 @@
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-text-dark);
-  text-align: center;
   margin-top: 1rem;
 }
 
@@ -51,16 +35,14 @@
 
 .home__intro__image__box {
   display: flex;
-  justify-content: center;
-  margin: 5rem 0;
+  place-content: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   animation: imageAnimation 4s ease-in;
-  animation-direction: alternate;
 }
-
 @keyframes imageAnimation {
   from {
     opacity: 0;
-    /* transform: translateX(-100%); */
   }
 
   to {
@@ -72,41 +54,94 @@
   width: 250px;
 }
 
+.home__intro__title__box {
+  display: flex;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.home__intro__title__boxVisible {
+  opacity: 1;
+}
+
+.home__intro__title {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-text-dark);
+}
+
 @media screen and (min-width: 768px) {
   .home__intro__container {
     padding: 3rem;
   }
 
   .home__intro__title {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
   }
 
+  .home__intro__text__box {
+    margin-top: 2rem;
+    margin: 0 3rem;
+ 
+  }
+ 
+
   .home__intro__text {
-    font-size: .9rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  .home__intro__image__box {
+    margin-top: 3rem;
   }
 
   .home__laptop {
-    width: 450px;
+    width: 400px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .home__intro__title {
-    font-size: 1.4rem;
+  .home__intro__text__box {
+    margin: 0 9rem;
   }
 
   .home__intro__text {
     font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+
+  .home__intro__image__box {
+    margin-top: 5rem;
   }
 
   .home__laptop {
-    width: 650px;
+    width: 350px;
+    height: 200px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .home__intro__text__box {
+    margin: 0 17rem;
+  }
+
+  .home__intro__text {
+    font-size: 1.2rem;
+  }
 
   .home__laptop {
-    width: 850px;
+    width: 650px;
+    height: 325px;
+  }
+
+  .home__intro__title {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }

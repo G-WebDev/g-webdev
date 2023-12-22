@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Typed from "typed.js";
+// import Typed from "typed.js";
 
 // IMPORT INTERN STYLE
 import Style from "./HomeIntro.module.css";
@@ -9,59 +9,96 @@ import images from "../../../Assets/Images";
 const HomeIntro = () => {
   const intro = useRef(null);
 
-  // Create reference to store the Typed instance itself
-  const typed = useRef(null);
-
   useEffect(() => {
     const options = {
-      // strings: ["Next level Web Development..."],
-      // strings: ["Elevate your online presence with G.WebDev!"],
-      strings: ["Elevate your online presence with G.WebDev!"],
-      typeSpeed: 30,
+      root: null, // Use the viewport as the root
+      rootMargin: "0px", // No margin
+      threshold: 0.5, // Trigger when 50% of the element is visible
     };
-    // elRef refers to the <span> rendered below
-    typed.current = new Typed(intro.current, options);
 
-    return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
-      typed.current.destroy();
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // If the element is intersecting with the viewport, add a class to show it
+          intro.current.classList.add(Style.home__intro__title__boxVisible);
+        } else {
+          // If not, remove the class
+          intro.current.classList.remove(Style.home__intro__title__boxVisible);
+        }
+      });
     };
-  }, []);
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Start observing the target element
+    observer.observe(intro.current);
+
+    // Clean up the observer when the component is unmounted
+    return () => observer.disconnect();
+  }, []); // Empty dependency array to run the effect once on mount
 
   return (
     <div className={Style.home__intro__container}>
-      <div className={Style.home__intro__title__box}>
-        <h1 className={Style.home__intro__title}>
-          <span style={{ whiteSpace: "pre" }} ref={intro} />
-        </h1>
-      </div>
+      <div className={Style.home__intro__text__img__wrapper}>
+        <div className={Style.home__intro__text__box}>
+          {/* <p className={Style.home__intro__text}>
+            Hello, i'm Gwen, the creative force behind <strong>G.WebDev</strong>
+            .
+            <br />
+            Specialized in crafting visually stunning and highly functional
+            websites, webshops, and web applications.
+          </p>
 
-      <div className={Style.home__intro__text__box}>
-        <p className={Style.home__intro__text}>
-          Hello, i'm Gwen, the creative force behind <strong>G.WebDev</strong>.
-          <br />
-          Specialized in crafting visually stunning and highly functional
-          websites, webshops, and web applications.
-        </p>
+          <p className={Style.home__intro__text}>
+            Are you in need of a captivating website or searching for a skilled
+            web developer in Gent?
+          </p>
 
-        <p className={Style.home__intro__text}>
-          Are you in need of a captivating website or searching for a skilled
-          web developer in Gent?
-        </p>
+          <p className={Style.home__intro__text}>Look no further!</p>
 
-        <p className={Style.home__intro__text}>Look no further!</p>
+          <p className={Style.home__intro__text}>
+            Let's transform your online vision into a compelling digital
+            reality.
+            <br />
+            Discover the power of innovative web solutions with <br />
+            <strong>G.WebDev.</strong>
+          </p> */}
 
-        <p className={Style.home__intro__text}>
-          Let's transform your online vision into a compelling digital reality.
-          <br />
-          Discover the power of innovative web solutions with <br />
-          <strong>G.WebDev</strong>
-        </p>
-      </div>
+          <p className={Style.home__intro__text}>
+            Welcome! I'm Gwen, the visionary behind G.WebDev. 🚀
+          </p>
 
-      <div className={Style.home__intro__image__box}>
-        <img src={images.HomeBg} alt="laptop" className={Style.home__laptop} />
+          <p className={Style.home__intro__text}>
+            With a passion for excellence, I specialize in developing
+            sophisticated and functional websites, webshops, and web
+            applications.
+          </p>
+
+          <p className={Style.home__intro__text}>
+            Whether you seek a captivating website or require the expertise of a
+            seasoned web developer in Gent, your search concludes here.
+          </p>
+
+          <p className={Style.home__intro__text}>
+            Let's elevate your online presence. Partner with G.WebDev to
+            transform your digital vision into a compelling reality through
+            innovative web solutions.
+          </p>
+        </div>
+
+        <div className={Style.home__intro__image__box}>
+          <img
+            src={images.HomeBg}
+            alt="laptop"
+            className={Style.home__laptop}
+          />
+        </div>
+
+        <div className={Style.home__intro__title__box} ref={intro}>
+          <h1 className={Style.home__intro__title}>
+            Elevate your online presence with G.WebDev!
+          </h1>
+        </div>
       </div>
     </div>
   );

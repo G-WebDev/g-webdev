@@ -18,6 +18,7 @@ const Footer = () => {
   return (
     <div className={Style.footer}>
       <div className={Style.footer__container__top}>
+       
         <div className={Style.footer__logo__box}>
           <Link to="/" target="blank">
             <img src={images.Logo} alt="logo" className={Style.footer__logo} />

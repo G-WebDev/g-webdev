@@ -1,0 +1,70 @@
+/* Mobile First Styles */
+
+.about__intro__container {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.about__intro__title__box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about__intro__title {
+  font-size: 1rem;
+  font-weight: 700;
+
+  text-align: center;
+  color: var(--color-text-dark);
+}
+
+.about__intro__text__box {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.about__intro__text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-dark);
+
+  margin: 1rem 0;
+}
+
+.about__intro__text strong {
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .about__intro__container {
+    padding: 3rem;
+  }
+
+  .about__intro__title {
+    font-size: 1.2rem;
+  }
+
+  .about__intro__text {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .about__intro__title {
+      font-size: 1.4rem;
+    }
+  
+    .about__intro__text {
+      font-size: 1.1rem;
+    }
+
+    .about__intro__container {
+        margin: 1rem 2rem;
+      }
+  
+  }
