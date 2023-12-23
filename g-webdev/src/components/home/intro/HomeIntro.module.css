@@ -36,8 +36,7 @@
 .home__intro__image__box {
   display: flex;
   place-content: center;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 3rem;
   animation: imageAnimation 4s ease-in;
 }
 @keyframes imageAnimation {
@@ -57,6 +56,8 @@
 .home__intro__title__box {
   display: flex;
   justify-content: center;
+  margin-top: .6rem;
+  margin-bottom: 1rem;
 
   opacity: 0;
   transition: opacity 0.5s;

@@ -5,7 +5,7 @@ const About = () => {
     <div className={Style.about__intro__container}>
       <div className={Style.about__intro__title__box}>
         <h1 className={Style.about__intro__title}>
-          About Gwen - Founder of G.WebDev{" "}
+          About Gwen - Founder of G.WebDev
         </h1>
       </div>
 
@@ -71,6 +71,7 @@ const About = () => {
           Gwen
         </p>
       </div>
+      <div className={Style.about__border__bottom}></div>
     </div>
   );
 };
