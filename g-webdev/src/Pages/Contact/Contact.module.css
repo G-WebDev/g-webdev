@@ -1,10 +1,176 @@
-.contact {
-    margin-top: 5rem;
-    text-align: center;
-    color: var(--color-text);
+/* Mobile First Styles */
+
+.contact__page__container {
+  display: block;
+  margin: 0 2rem;
 }
 
-.contact_container {
-    margin: 0 auto;
-    width: var(--container-lg);
+.contact__intro__wrapper {
+  padding: 1rem;
+}
+
+.contact__title__box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__intro__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.contact__text__box {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.contact__intro__text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+
+.contact__form__input_wrapper {
+  position: relative;
+  margin: 2rem;
+}
+
+.contact__form__input_wrapper input {
+  all: unset;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 0.3px solid var(--color-text-dark);
+  border-radius: 0.5rem;
+}
+
+.contact__form__input_wrapper textarea {
+  all: unset;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: 0.3px solid var(--color-text-dark);
+  border-radius: 0.3rem;
+}
+
+.contact__form__input_wrapper label {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  color: var(--color-text-dark);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.contact__form__input_wrapper input:is(:focus, :valid) ~ label {
+  bottom: 100%;
+  color: black;
+  font-weight: 500;
+}
+
+.contact__form__input_wrapper textarea:is(:focus, :valid) ~ label {
+  bottom: 100%;
+  color: black;
+  font-weight: 500;
+}
+
+.contact__form__btn__box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 1rem;
+  background: var(--color-text-dark);
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/* Responsive adjustments for screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+  .contact__page__container {
+    margin: 0 8rem;
+  }
+
+  .contact__intro__title {
+    font-size: 1.2rem;
+  }
+
+  .contact__intro__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+}
+
+/* Responsive adjustments for screens with a minimum width of 1024px */
+@media screen and (min-width: 1024px) {
+  .contact__page__container {
+    margin: 0 12rem;
+  }
+
+  .contact__intro__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+}
+
+/* Responsive adjustments for screens with a minimum width of 1440px */
+@media screen and (min-width: 1440px) {
+  .contact__page__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact__intro__title {
+    font-size: 1.4rem;
+  }
 }
