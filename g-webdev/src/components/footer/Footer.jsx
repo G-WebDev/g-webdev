@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className={Style.footer__info__box}>
           <div className={Style.footer__gegevens__box}>
-            <p className={Style.footer__gegevens__title}>GEGEVENS</p>
+            <p className={Style.footer__gegevens__title}>INFO</p>
             <ul className={Style.footer__gegevens__list}>
               <li className={Style.footer__gegevens__list__item}>
                 <Link to="mailto: g-webdev@outlook.com">
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           <div className={Style.footer__paginas__box}>
-            <p className={Style.footer__paginas__title}>PAGINA'S</p>
+            <p className={Style.footer__paginas__title}>PAGES</p>
 
             <ul className={Style.footer__paginas__list}>
               <li className={Style.footer__paginas__list__item}>

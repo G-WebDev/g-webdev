@@ -26,17 +26,16 @@
   font-size: 1.2rem;
   text-align: center;
   color: var(--color-text-dark);
+  margin: 2rem 0;
 }
 
 .footer__gegevens__list {
   list-style: none;
   text-align: center;
-  /* margin-top: 1.5rem;
-  margin-left: 4.5rem; */
 }
 
 .footer__gegevens__list__item {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   font-size: 1rem;
   /* text-align: center; */
 }
@@ -65,7 +64,7 @@
 }
 
 .footer__paginas__list__item {
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
   font-size: 1rem;
 }
 
