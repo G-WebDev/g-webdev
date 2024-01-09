@@ -8,9 +8,9 @@ import BgImage from './bg_image.jpg';
 import LaptopFrame from './LaptopFrame.png';
 import LaptopFrame2 from './LaptopFrame2.png';
 import ContentImage from './contentImage.jpg';
-import HexaBg from './hexagonal.png'
+import HexaBg from './hexagonal.png';
 
-export default {
+const images = {
     Logo,
     LogoWeb3,
     Web3,
@@ -22,4 +22,6 @@ export default {
     LaptopFrame2,
     ContentImage,
     HexaBg
-}
+};
+
+export default images;

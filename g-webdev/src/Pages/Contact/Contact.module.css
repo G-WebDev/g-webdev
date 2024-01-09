@@ -2,7 +2,7 @@
 
 .contact__page__container {
   display: block;
-  margin: 0 2rem;
+  margin: 1rem 0;
 }
 
 .contact__intro__wrapper {
@@ -107,20 +107,17 @@ button svg {
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-
 button:hover svg {
   transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
 button:hover span {
-  transform: translateX(5em);
+  transform: translateX(5rem);
 }
 
 button:active {
-  transform: scale(0.95);
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+  background-color: #6c63ff;
 }
 
 @keyframes fly-1 {
@@ -131,6 +128,19 @@ button:active {
   to {
     transform: translateY(-0.1em);
   }
+}
+
+.successMessage {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #7ac77e;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin: 0.5rem 2rem;
+  overflow: hidden;
+  transition: all 0.2s;
 }
 
 /* Responsive adjustments for screens with a minimum width of 768px */

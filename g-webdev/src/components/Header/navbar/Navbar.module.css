@@ -1,12 +1,12 @@
 /* Media Query for Laptops */
 @media screen and (min-width: 1024px) {
   .navbar__menu {
-    padding: 1rem;
+   margin: 0 auto;
   }
 
   .navbar__menu__list {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     list-style: none;
   }
 
@@ -20,7 +20,7 @@
     margin: 0 40%; /* Adjusted for better spacing on small screens */
     padding: 0.5rem;
     box-shadow: 0 1px var(--color-text-dark);
-    transition: all 0.7s ease;
+    transition: all 0.3s ease;
   }
 
   .navbar__menu__list__item:hover .item__line {

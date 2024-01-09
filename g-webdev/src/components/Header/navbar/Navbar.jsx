@@ -9,35 +9,35 @@ const NavBar = () => {
     <div className={Style.navbar__menu}>
       <ul className={Style.navbar__menu__list}>
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/" target="blank">
+          <Link to="/" >
             Home
           </Link>
           <div className={Style.item__line}></div>
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/about" target="blank">
+          <Link to="/about" >
             About Me
           </Link>
           <div className={Style.item__line}></div>
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/services" target="blank">
+          <Link to="/services" >
             Services
           </Link>
           <div className={Style.item__line}></div>
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/projects" target="blank">
+          <Link to="/projects" >
             Projects
           </Link>
           <div className={Style.item__line}></div>
         </li>
 
         <li className={Style.navbar__menu__list__item}>
-          <Link to="/contact" target="blank">
+          <Link to="/contact" >
             Contact
           </Link>
           <div className={Style.item__line}></div>

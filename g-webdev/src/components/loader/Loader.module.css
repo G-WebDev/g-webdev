@@ -1,0 +1,238 @@
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+.shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 .5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+
+.shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: .2s
+}
+
+.shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+
+
+
+/* .loader {
+  position: relative;
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 40px 60px 30px 60px;
+  border-color: #3760c9 #96ddfc #96ddfc #36bbf7;
+  animation: envFloating 1s ease-in infinite alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  right: 62px;
+  top: -40px;
+  height: 70px;
+  width: 50px;
+  background-image: linear-gradient(#fff 45px, transparent 0),
+    linear-gradient(#fff 45px, transparent 0),
+    linear-gradient(#fff 45px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 30px 4px;
+  background-position: 0px 11px, 8px 35px, 0px 60px;
+  animation: envDropping 0.75s linear infinite;
+}
+
+@keyframes envFloating {
+  0% {
+    transform: translate(-2px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes envDropping {
+  0% {
+    background-position: 100px 11px, 115px 35px, 105px 60px;
+    opacity: 1;
+  }
+
+  50% {
+    background-position: 0px 11px, 20px 35px, 5px 60px;
+  }
+
+  60% {
+    background-position: -30px 11px, 0px 35px, -10px 60px;
+  }
+
+  75%,
+  100% {
+    background-position: -30px 11px, -30px 35px, -30px 60px;
+    opacity: 0;
+  }
+} */
+
+
+/* .loader__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834);
+  z-index: 1;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+} */
+
+
+
+/* .spinner {
+  width: 70.4px;
+  height: 70.4px;
+  --clr: rgb(247, 197, 159);
+  --clr-alpha: rgb(247, 197, 159,.1);
+  animation: spinner 1.6s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(35.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+} */
