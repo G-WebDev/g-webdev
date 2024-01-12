@@ -41,31 +41,15 @@ const HomeIntro = () => {
     <div className={Style.home__intro__container}>
       <div className={Style.home__intro__text__img__wrapper}>
         <div className={Style.home__intro__text__box}>
-          {/* <p className={Style.home__intro__text}>
-            Hello, i'm Gwen, the creative force behind <strong>G.WebDev</strong>
-            .
-            <br />
-            Specialized in crafting visually stunning and highly functional
-            websites, webshops, and web applications.
-          </p>
 
+          <h1 className={Style.home__intro__title} ref={intro}>
+            Welcome!
+          </h1>
+          <h1 className={Style.home__intro__title_2} ref={intro}>
+            I'm Gwen, 
+          </h1>
           <p className={Style.home__intro__text}>
-            Are you in need of a captivating website or searching for a skilled
-            web developer in Gent?
-          </p>
-
-          <p className={Style.home__intro__text}>Look no further!</p>
-
-          <p className={Style.home__intro__text}>
-            Let's transform your online vision into a compelling digital
-            reality.
-            <br />
-            Discover the power of innovative web solutions with <br />
-            <strong>G.WebDev.</strong>
-          </p> */}
-
-          <p className={Style.home__intro__text}>
-            Welcome! I'm Gwen, the visionary behind G.WebDev. 🚀
+          the visionary behind G.WebDev.
           </p>
 
           <p className={Style.home__intro__text}>
@@ -94,11 +78,9 @@ const HomeIntro = () => {
           />
         </div>
 
-        <div className={Style.home__intro__title__box} ref={intro}>
-          <h1 className={Style.home__intro__title}>
+        <p className={Style.home__intro__image__text} >
             Elevate your online presence with G.WebDev!
-          </h1>
-        </div>
+          </p>
       </div>
     </div>
   );

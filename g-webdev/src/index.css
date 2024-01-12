@@ -9,7 +9,13 @@ body {
   font-family: "Avenir", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--color-accent-2);
+  /* Photo by <a href="https://unsplash.com/@maxberg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Berg</a> on <a href="https://unsplash.com/photos/a-pink-and-green-abstract-background-with-a-white-background-M8HFXJ1btZ0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+   */
+  background-image: url("./Assets/Backgrounds/unsplash_bg_3.jpg");
+  background-size: cover;
+
+  /* background: #ffffff;
+  background: radial-gradient(at center, #ffffff, #d0d0d0); */
 }
 
 h1,
@@ -45,4 +51,6 @@ p {
   --color-accent-1: #e9d9c7;
   --color-accent-2: #f2e9e9;
   --color-accent-3: #7c3f3f;
+
+ 
 }

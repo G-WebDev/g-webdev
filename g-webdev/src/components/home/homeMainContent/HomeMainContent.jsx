@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 // IMPORT INTERN STYLE
 import Style from "./HomeMainContent.module.css";
 
+
 const HomeMainContent = () => {
   const line1 = useRef(null);
   const line2 = useRef(null);
@@ -141,11 +142,6 @@ const HomeMainContent = () => {
             a successful and global store. Expand your limits before it's late!
             Together we build your online store with a modern web design. You
             can count on G.WebDev for this!
-            {/* Online verkopen is nu eenmaal de 'hipe'. Bedrijven kiezen hiervoor
-            om meer klanten aan te spreken. Start vandaag met uw online shop en
-            groei tot een succesvolle en globale winkel. Expand your limits
-            before it's late! Samen bouwen we uw online winkel met een moderne
-            webdesign. Hierbij kunt u rekenen op <strong>G.WebDev</strong>! */}
             <div
               className={Style.content__text__line__bottom}
               ref={line6}

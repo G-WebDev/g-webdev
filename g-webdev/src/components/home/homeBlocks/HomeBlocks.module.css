@@ -13,35 +13,38 @@
 
 .home__content__block1 {
   background-color: var(--color-bg-dark);
+  opacity: .3;
 }
 
 .home__content__block2 {
   background-color: var(--color-bg-dark-2);
+  opacity: .3;
 }
 
 .home__content__block3 {
   background-color: var(--color-bg-dark-3);
+  opacity: .3;
 }
 
 .home__content__block__title {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 500;
   padding: 1rem;
   color: var(--color-bg-light);
 
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity .5s ease-in;
 }
 
 .home__content__block__text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-bg-light);
   padding: 1rem 3rem;
 
   opacity: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity .8s ease-in;
 }
 
 .title1__boxVisible,
@@ -63,8 +66,8 @@
   .home__content__block__text {
     font-size: 1rem;
     line-height: 1.6;
-    font-weight: 400;
-    padding: 4rem;
+    font-weight: 500;
+    padding: 3rem;
   }
 }
 

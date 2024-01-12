@@ -1,16 +1,16 @@
 /* Mobile First Styles */
-
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 1rem;
   gap: 2rem;
+
 }
 
 .header__logo__box {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem;  
 }
 
 .header__logo {
@@ -28,26 +28,22 @@
 }
 
 /* Media Query for Tablets */
-
 @media screen and (min-width: 768px) {
   .header__logo {
     width: 300px;
   }
-
-  .hamburger__box {
-    padding-top: 1rem;
-  }
 }
 
 /* Media Query for Laptops */
-
 @media screen and (min-width: 1024px) {
   .header {
+    display: flex;
+    justify-content: space-evenly;
     padding: 2rem;
   }
 
   .header__logo {
-    width: 250px;
+    width: 350px;
   }
 
   .hamburger__box,
@@ -57,7 +53,17 @@
 
   .header__navigation__box {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 2rem;
+    align-items: center;
+  }
+}
+
+/* Media Query for big screens */
+@media screen and (min-width: 1440px) {
+  .header {
+    justify-content: space-around;
+  }
+
+  .header__logo {
+    width: 400px;
   }
 }
