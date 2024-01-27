@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
-import Style from ".//components/header/Header.module.css";
+import Style from "./components/Header/Header.module.css";
 
 // IMPORT INTERN COMPONENTS
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
 
-import About from "./pages/About/About";
-import Home from "./pages/Home/Home";
-import Projects from "./pages/Projects/Projects";
-import Diensten from "./pages/Diensten/Diensten";
-import Contact from "./pages/Contact/Contact";
+import About from "./Pages/About/About";
+import Home from "./Pages/Home/Home";
+import Projects from "./Pages/Projects/Projects";
+import Diensten from "./Pages/Diensten/Diensten";
+import Contact from "./Pages/Contact/Contact";
 import Footer from "./components/footer/Footer";
 
-import SideBar from ".//components/header/sidebar/SideBar";
+import SideBar from "./components/Header/sidebar/SideBar";
 
 function App() {
   const [openSideBar, setOpenSideBar] = useState(false);
